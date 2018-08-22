@@ -1,0 +1,50 @@
+syntax="proto2";
+
+
+//相当于在这里定义了名为doc_index_proto命名空间
+package doc_index_proto; 
+
+
+message Pair
+{
+    //每个分词结果的前闭后开区间
+    required uint32 beg = 1;
+    required uint32 end = 2;
+};
+
+message DocInfo
+{
+    //一个文档对应的信息
+    required uint64 id = 1;
+    required string title = 2;
+    required string content = 3;
+    required string show_url = 4;
+    required string jump_url = 5;
+
+    //以下两个字段，把标题和正文的分词结果先罗列好
+    //以备实现倒排的时候使用
+    repeated Pair title_token = 6;
+    repeated Pair content_token = 7;
+};
+
+message Weight //权重 权重越高，相关性越高
+{
+    required uint64 doc_id = 1;
+    required int32 weight = 2;
+}
+
+message KwdInfo
+{
+    //关键词的字面值
+    required string key = 1;
+    //文档 id 的列表
+    repeated Weight doc_list = 2;
+};
+
+message Index
+{
+    //包含整体索引的全部数据 正排索引 + 倒排索引
+    repeated DocInfo forward_index = 1;  //正排
+    //kwd => key word
+    repeated KwdInfo inverted_index = 2; //倒排
+};
