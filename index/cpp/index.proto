@@ -23,6 +23,7 @@ message DocInfo
 
     //以下两个字段，把标题和正文的分词结果先罗列好
     //以备实现倒排的时候使用
+    //只是保存词出现的前闭后开区间，词只保存一份在DocInfo中
     repeated Pair title_token = 6;
     repeated Pair content_token = 7;
 };
@@ -44,6 +45,7 @@ message KwdInfo
 message Index
 {
     //包含整体索引的全部数据 正排索引 + 倒排索引
+    //repeated相当于数组，是protobuf库中的类型
     repeated DocInfo forward_index = 1;  //正排
     //kwd => key word
     repeated KwdInfo inverted_index = 2; //倒排
