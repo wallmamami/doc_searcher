@@ -36,6 +36,13 @@ bool Index::Build(const std::string& input_path)
         //   此函数的输出结果，直接放到Index::inverted_index_中
         BuildInverted(*doc_info);
     }
+
+    //4. 处理完所有文档之后，针对所有的倒排拉链进行排序
+    //   key-value中的value进行排序，按照权重降序排序
+    SortInverted();
+    file.close();
+    LOG(INFO) << "Index Build Done!!!";
+    return true;
 }
 
 const DocInfo* Index::BuildForward(const std::string& line)
@@ -91,6 +98,7 @@ void Index::SplitTitle(const std::string& title, DocInfo* doc_info)
 
     for(size_t i = 0; i < word.size(); ++i)
     {
+        //先创建一个title_token的pair的空间，然后再给这个空间赋值
         auto* token = doc_info->add_title_token();
         token->set_beg(words[i].offset);
         if(i + 1 < words.size())
@@ -107,6 +115,133 @@ void Index::SplitTitle(const std::string& title, DocInfo* doc_info)
 
     return;
 }
+
+void Index::SplitContent(const std::string& content, DocInfo* doc_info)
+{
+    std::vector<cppjieba::Word> words;
+    //要调用cppjieba进行分词，需要创建一个jieba对象
+    jieba_.CutForSearch(content, words);
+    //words里面包含包含的分词结果，每个结果包含一个 offset
+    //offset表示的是当前词在文档中的起始位置的下标
+    //而世界上这里我们需要的是前闭后开区间
+    if(words.size() <= 1)
+    {
+        //错误处理
+        LOG(FATAL) << "SplitContent failed!";
+        return;
+    }
+
+    for(size_t i = 0; i < words.size(); ++i)
+    {
+        //先在doc_info里面的content_token数组中创建一个pair空间
+        auto* token = doc_info->add_content_token;
+        token->set_beg(words[i].offset);
+        if(i + 1 < words.size())
+        {
+            //i 不是最后一个元素
+            token->set_end(words[i+1].offset);
+        }
+        else
+        {
+            //i 是最后一个元素
+            token->set_end(content.size());
+        }
+    }
+
+    return;
+}
+
+
+void Index::BuildInverted(const DocInfo& doc_info)
+{
+    WordCntMap word_cnt_map; //key为关键词，value为结构体，结构体的内容为，词在正文，标题的出现次数
+    //1. 统计 title 中每个词出现的次数
+    for(int i = 0; i < doc_info.title_token_size(); ++i)
+    {
+        const auto& token = doc_info.title_token(i);
+        //因为这里的token数组里面存的区间，真正的内容在title中
+        std::string word = doc_info.title().substr(token.beg(), token.end() - token.beg());
+
+        //HELLO hello在这里算一个词，大小写不敏感
+        boost::to_lower(word);
+
+        //去掉暂停词
+        if(stop_word_dict_.Find(word))
+        {
+            continue;
+        }
+
+        //存在，值就++；否则，插入
+        ++word_cnt_map[word].title_cnt;
+        
+    }
+
+    //2. 统计content中每个词出现的个数
+    //   此时得到一个hash表，哈市表中的key就是关键词，
+    //   hash表中的value就是一个结构体，结构体中包含
+    //   该词在标题和正文中出现的次数
+    for(int i = 0; i < doc_info.content_token_size(); ++i)
+    {
+        const auto& token = doc_info.content_token(i);
+        std::string word = doc_info.content().substr(token.beg(), token.end() - token.end());
+        boost::to_lower(word);
+        if(stop_word_dict_.Find(word))
+        {
+            continue;
+        }
+        ++word_cnt_map[word].content_cnt;
+        //记录词在正文中第一次出现的位置--方便以后返回响应的时候构建描述信息
+        if(word_cnt_map[word].content_cnt == 1)
+        {
+            word_cnt_map[word].first_pos = token.beg();
+        }
+    }
+    //3. 根据统计结果，更新到倒排索引InvertedIndex中
+    //   遍历刚才的hash表，拿着key去倒排索引中查找
+    //   如果倒排索引中不存在这个词，就新增一项
+    //   否则，就构造一个Weight结构，将其添加到
+    //   对应的倒排拉链InvertedList当中
+    for(const auto& word_pair : word_cnt_map)
+    {
+        Weight weight;
+        weight.set_doc_id(doc_info_id());
+        //这里构造Weight结构，得先计算权重，second为value，first为key
+        weight.set_weight(CalcWeight(word_pair.second.title_cnt, word_pair.second.content_cnt));
+        weight.set_first_pos(word_pair.second.first_pos);
+
+        //先获取到当前词对应的倒排拉链
+        InvertedList& inverted_list = inverteed_index[word_pair.first];
+        inverted_list.push_back(weight);
+    }
+
+    return;
+}
+
+int Index::CalcWeight(int title_cnt, int content_cnt)
+{
+    //这里权重直接简单的进行计算
+    return 10 * title_cnt + content_cnt;
+}
+
+void Index::SortInverted()
+{
+    //把所有的倒排拉链都按照weight降序排序
+    for(auto& inverted_pair : inverted_index_)
+    {
+        //每个inverted_pair时一个键值对
+        //key为关键词，value为weight的数组
+        //每个weight里面为文档id和权重
+        InvertedList& inverted_list = inverted_pair.second;
+        std::sort(inverted_list.begin(), inverted_list.end(), CmpWeight);
+    }
+    return;
+}
+
+bool Index::CmpWeight(const Weight& w1, const Weight& w2)
+{
+    return w1.weight() > w2.weight();
+}
+
 
 } //end doc_index
 

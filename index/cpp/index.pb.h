@@ -518,12 +518,21 @@ class Weight : public ::google::protobuf::Message /* @@protoc_insertion_point(cl
   ::google::protobuf::int32 weight() const;
   void set_weight(::google::protobuf::int32 value);
 
+  // required int32 first_pos = 3;
+  bool has_first_pos() const;
+  void clear_first_pos();
+  static const int kFirstPosFieldNumber = 3;
+  ::google::protobuf::int32 first_pos() const;
+  void set_first_pos(::google::protobuf::int32 value);
+
   // @@protoc_insertion_point(class_scope:doc_index_proto.Weight)
  private:
   void set_has_doc_id();
   void clear_has_doc_id();
   void set_has_weight();
   void clear_has_weight();
+  void set_has_first_pos();
+  void clear_has_first_pos();
 
   // helper for ByteSizeLong()
   size_t RequiredFieldsByteSizeFallback() const;
@@ -533,6 +542,7 @@ class Weight : public ::google::protobuf::Message /* @@protoc_insertion_point(cl
   mutable int _cached_size_;
   ::google::protobuf::uint64 doc_id_;
   ::google::protobuf::int32 weight_;
+  ::google::protobuf::int32 first_pos_;
   friend struct ::protobuf_index_2eproto::TableStruct;
   friend void ::protobuf_index_2eproto::InitDefaultsWeightImpl();
 };
@@ -1242,6 +1252,30 @@ inline void Weight::set_weight(::google::protobuf::int32 value) {
   set_has_weight();
   weight_ = value;
   // @@protoc_insertion_point(field_set:doc_index_proto.Weight.weight)
+}
+
+// required int32 first_pos = 3;
+inline bool Weight::has_first_pos() const {
+  return (_has_bits_[0] & 0x00000004u) != 0;
+}
+inline void Weight::set_has_first_pos() {
+  _has_bits_[0] |= 0x00000004u;
+}
+inline void Weight::clear_has_first_pos() {
+  _has_bits_[0] &= ~0x00000004u;
+}
+inline void Weight::clear_first_pos() {
+  first_pos_ = 0;
+  clear_has_first_pos();
+}
+inline ::google::protobuf::int32 Weight::first_pos() const {
+  // @@protoc_insertion_point(field_get:doc_index_proto.Weight.first_pos)
+  return first_pos_;
+}
+inline void Weight::set_first_pos(::google::protobuf::int32 value) {
+  set_has_first_pos();
+  first_pos_ = value;
+  // @@protoc_insertion_point(field_set:doc_index_proto.Weight.first_pos)
 }
 
 // -------------------------------------------------------------------

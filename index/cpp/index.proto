@@ -32,6 +32,8 @@ message Weight //权重 权重越高，相关性越高
 {
     required uint64 doc_id = 1;
     required int32 weight = 2;
+    //该关键词表示在正文中第一次出现的位置
+    required int32 first_pos = 3;
 }
 
 message KwdInfo

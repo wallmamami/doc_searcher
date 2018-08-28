@@ -194,8 +194,10 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   ~0u,  // no _weak_field_map_
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::doc_index_proto::Weight, doc_id_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::doc_index_proto::Weight, weight_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::doc_index_proto::Weight, first_pos_),
   0,
   1,
+  2,
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::doc_index_proto::KwdInfo, _has_bits_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::doc_index_proto::KwdInfo, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -218,9 +220,9 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
 static const ::google::protobuf::internal::MigrationSchema schemas[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
   { 0, 7, sizeof(::doc_index_proto::Pair)},
   { 9, 21, sizeof(::doc_index_proto::DocInfo)},
-  { 28, 35, sizeof(::doc_index_proto::Weight)},
-  { 37, 44, sizeof(::doc_index_proto::KwdInfo)},
-  { 46, 53, sizeof(::doc_index_proto::Index)},
+  { 28, 36, sizeof(::doc_index_proto::Weight)},
+  { 39, 46, sizeof(::doc_index_proto::KwdInfo)},
+  { 48, 55, sizeof(::doc_index_proto::Index)},
 };
 
 static ::google::protobuf::Message const * const file_default_instances[] = {
@@ -259,15 +261,16 @@ void AddDescriptorsImpl() {
       "\022\020\n\010show_url\030\004 \002(\t\022\020\n\010jump_url\030\005 \002(\t\022*\n\013"
       "title_token\030\006 \003(\0132\025.doc_index_proto.Pair"
       "\022,\n\rcontent_token\030\007 \003(\0132\025.doc_index_prot"
-      "o.Pair\"(\n\006Weight\022\016\n\006doc_id\030\001 \002(\004\022\016\n\006weig"
-      "ht\030\002 \002(\005\"A\n\007KwdInfo\022\013\n\003key\030\001 \002(\t\022)\n\010doc_"
-      "list\030\002 \003(\0132\027.doc_index_proto.Weight\"j\n\005I"
-      "ndex\022/\n\rforward_index\030\001 \003(\0132\030.doc_index_"
-      "proto.DocInfo\0220\n\016inverted_index\030\002 \003(\0132\030."
-      "doc_index_proto.KwdInfo"
+      "o.Pair\";\n\006Weight\022\016\n\006doc_id\030\001 \002(\004\022\016\n\006weig"
+      "ht\030\002 \002(\005\022\021\n\tfirst_pos\030\003 \002(\005\"A\n\007KwdInfo\022\013"
+      "\n\003key\030\001 \002(\t\022)\n\010doc_list\030\002 \003(\0132\027.doc_inde"
+      "x_proto.Weight\"j\n\005Index\022/\n\rforward_index"
+      "\030\001 \003(\0132\030.doc_index_proto.DocInfo\0220\n\016inve"
+      "rted_index\030\002 \003(\0132\030.doc_index_proto.KwdIn"
+      "fo"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 463);
+      descriptor, 482);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "index.proto", &protobuf_RegisterTypes);
 }
@@ -1217,6 +1220,7 @@ void Weight::InitAsDefaultInstance() {
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int Weight::kDocIdFieldNumber;
 const int Weight::kWeightFieldNumber;
+const int Weight::kFirstPosFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 Weight::Weight()
@@ -1234,16 +1238,16 @@ Weight::Weight(const Weight& from)
       _cached_size_(0) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::memcpy(&doc_id_, &from.doc_id_,
-    static_cast<size_t>(reinterpret_cast<char*>(&weight_) -
-    reinterpret_cast<char*>(&doc_id_)) + sizeof(weight_));
+    static_cast<size_t>(reinterpret_cast<char*>(&first_pos_) -
+    reinterpret_cast<char*>(&doc_id_)) + sizeof(first_pos_));
   // @@protoc_insertion_point(copy_constructor:doc_index_proto.Weight)
 }
 
 void Weight::SharedCtor() {
   _cached_size_ = 0;
   ::memset(&doc_id_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&weight_) -
-      reinterpret_cast<char*>(&doc_id_)) + sizeof(weight_));
+      reinterpret_cast<char*>(&first_pos_) -
+      reinterpret_cast<char*>(&doc_id_)) + sizeof(first_pos_));
 }
 
 Weight::~Weight() {
@@ -1284,10 +1288,10 @@ void Weight::Clear() {
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 7u) {
     ::memset(&doc_id_, 0, static_cast<size_t>(
-        reinterpret_cast<char*>(&weight_) -
-        reinterpret_cast<char*>(&doc_id_)) + sizeof(weight_));
+        reinterpret_cast<char*>(&first_pos_) -
+        reinterpret_cast<char*>(&doc_id_)) + sizeof(first_pos_));
   }
   _has_bits_.Clear();
   _internal_metadata_.Clear();
@@ -1331,6 +1335,20 @@ bool Weight::MergePartialFromCodedStream(
         break;
       }
 
+      // required int32 first_pos = 3;
+      case 3: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(24u /* 24 & 0xFF */)) {
+          set_has_first_pos();
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
+                 input, &first_pos_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
       default: {
       handle_unusual:
         if (tag == 0) {
@@ -1368,6 +1386,11 @@ void Weight::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteInt32(2, this->weight(), output);
   }
 
+  // required int32 first_pos = 3;
+  if (cached_has_bits & 0x00000004u) {
+    ::google::protobuf::internal::WireFormatLite::WriteInt32(3, this->first_pos(), output);
+  }
+
   if (_internal_metadata_.have_unknown_fields()) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         _internal_metadata_.unknown_fields(), output);
@@ -1391,6 +1414,11 @@ void Weight::SerializeWithCachedSizes(
   // required int32 weight = 2;
   if (cached_has_bits & 0x00000002u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(2, this->weight(), target);
+  }
+
+  // required int32 first_pos = 3;
+  if (cached_has_bits & 0x00000004u) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(3, this->first_pos(), target);
   }
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -1419,6 +1447,13 @@ size_t Weight::RequiredFieldsByteSizeFallback() const {
         this->weight());
   }
 
+  if (has_first_pos()) {
+    // required int32 first_pos = 3;
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int32Size(
+        this->first_pos());
+  }
+
   return total_size;
 }
 size_t Weight::ByteSizeLong() const {
@@ -1430,7 +1465,7 @@ size_t Weight::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (((_has_bits_[0] & 0x00000003) ^ 0x00000003) == 0) {  // All required fields are present.
+  if (((_has_bits_[0] & 0x00000007) ^ 0x00000007) == 0) {  // All required fields are present.
     // required uint64 doc_id = 1;
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::UInt64Size(
@@ -1440,6 +1475,11 @@ size_t Weight::ByteSizeLong() const {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::Int32Size(
         this->weight());
+
+    // required int32 first_pos = 3;
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int32Size(
+        this->first_pos());
 
   } else {
     total_size += RequiredFieldsByteSizeFallback();
@@ -1474,12 +1514,15 @@ void Weight::MergeFrom(const Weight& from) {
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 7u) {
     if (cached_has_bits & 0x00000001u) {
       doc_id_ = from.doc_id_;
     }
     if (cached_has_bits & 0x00000002u) {
       weight_ = from.weight_;
+    }
+    if (cached_has_bits & 0x00000004u) {
+      first_pos_ = from.first_pos_;
     }
     _has_bits_[0] |= cached_has_bits;
   }
@@ -1500,7 +1543,7 @@ void Weight::CopyFrom(const Weight& from) {
 }
 
 bool Weight::IsInitialized() const {
-  if ((_has_bits_[0] & 0x00000003) != 0x00000003) return false;
+  if ((_has_bits_[0] & 0x00000007) != 0x00000007) return false;
   return true;
 }
 
@@ -1512,6 +1555,7 @@ void Weight::InternalSwap(Weight* other) {
   using std::swap;
   swap(doc_id_, other->doc_id_);
   swap(weight_, other->weight_);
+  swap(first_pos_, other->first_pos_);
   swap(_has_bits_[0], other->_has_bits_[0]);
   _internal_metadata_.Swap(&other->_internal_metadata_);
   swap(_cached_size_, other->_cached_size_);

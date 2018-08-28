@@ -34,6 +34,7 @@ struct WordCnt
 
 //key--关键字， value-在正文，标题等出现的次数的哈希
 //为了方便建立倒排索引
+//保存的是一个文档中所有词的出现次数。
 typedef std::unordered_map<std::string, WordCnt> WordCntMap;
 
 //索引模块核心类，和索引相关的全部操作都包含在这个类中
@@ -50,7 +51,7 @@ class Index//单例模式
 {
 public:
     Index();
-    static index* Instance()
+    static Index* Instance()
     {
         if(inst_ == NULL)
         {
@@ -72,8 +73,11 @@ private:
 
     const DocInfo* BuildForward(const std::string& line);
     void BuildInverted(const DocInfo& doc_info);
+    SortInverted();
     SplitTitle(const std::string& title, DocInfo* doc_info);
     SplitContent(const std::string& content, DocInfo* doc_info);
+    CalcWeight(int title_cnt, int content_cnt);
+    static bool CmpWeight(const Weight& w1, const Weight& w2);
 
 
 };
