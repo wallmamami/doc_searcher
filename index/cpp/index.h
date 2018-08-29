@@ -69,6 +69,19 @@ public:
 
     //把磁盘上的文件加载到内存的索引结构中
     bool Load(const std::string& index_path);
+
+    //调试用的接口，把内存中的索引数据按照一定的格式打印到文件中
+    bool Dump(const std::string& forward_dump_path, const std::string& inverted_dump_path);
+
+    //根据 doc_id 获取到文档详细信息
+    const DocInfo* GetDocInfo(uint64_t doc_id) const;
+    
+    //根据关键词获取到 倒排拉链（包含一组doc_id）
+    const InvertedList* GetInvertedList(const std::string& key) const;
+
+    //此处为了方便服务器进行分词，再提供一个函数
+    void CutWordWithoutStopWord(const std::string& query, std::vector<std::string>* words);
+
 private:
     ForwardIndex forward_index_; //正排索引，一组DocInfo
     InvertedIndex inverted_index_; //倒排索引，哈希unordered_map;

@@ -340,6 +340,56 @@ bool Index::ConvertFromProto(const std::string& proto_data)
     }
 }
 
+//调试用的接口，把内存中的索引结构按照一定的格式打印到文件中
+bool Index::Dump(const std::string& forward_dump_path, const std::string& inverted_dump_path)
+{
+    LOG(INFO) << "Index dump";
+    //1. 处理正排
+    std::ofstream forward_dump_file(forward_dump_path.c_str());
+    CHECK(forward_dump_file.is_open());
+    for(size_t i = 0; i < forward_index_.size(); ++i)
+    {
+        const DocInfo& doc_info = forward_index_[i];
+        forward_dump_file << doc_info.Utf8DebugString() << "====================";
+    }
+
+    forward_dump_file.close();
+
+    //2. 处理倒排
+    std::ofstream inverted_dump_file(inverted_dump_path.c_str());
+    CHECK(inverted_dump_file.is_open());
+    for(const auto& inverted_pair : inverted_index_)
+    {
+        inverted_dump_file << inverted_pair.first << "\n";
+        for(const auto& weight : inverted_pair.second)
+        {
+            inverted_dump_file << weight.Utf8DebugString();
+        }
+        inverted_dump_file << "===================";
+    }
+    inverted_dump_file.close();
+    LOG(INFO) << "Index Dump Done";
+    return true;
+}
+
+//根据 doc_id 获取到文档详细信息
+const DocInfo* Index::GetDocInfo(uint64_t doc_id) const
+{
+    if(doc_id >= forward_index_.size())
+    {
+        return NULL;
+    }
+
+    return &forward_index_[doc_id];
+}
+
+    //根据关键词获取到 倒排拉链（包含一组doc_id）
+    const InvertedList* GetInvertedList(const std::string& key) const;
+
+    //此处为了方便服务器进行分词，再提供一个函数
+    void CutWordWithoutStopWord(const std::string& query, std::vector<std::string>* words);
+
+
 } //end doc_index
 
 
