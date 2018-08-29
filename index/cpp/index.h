@@ -63,6 +63,12 @@ public:
 
     //从raw_input 文件中读取数据，在内存中构建索引结构
     bool Build(const std::string& input_path);
+
+    //把内存中的索引数据保存到磁盘上
+    bool Save(const std::string& ouput_path);
+
+    //把磁盘上的文件加载到内存的索引结构中
+    bool Load(const std::string& index_path);
 private:
     ForwardIndex forward_index_; //正排索引，一组DocInfo
     InvertedIndex inverted_index_; //倒排索引，哈希unordered_map;
@@ -78,7 +84,8 @@ private:
     SplitContent(const std::string& content, DocInfo* doc_info);
     CalcWeight(int title_cnt, int content_cnt);
     static bool CmpWeight(const Weight& w1, const Weight& w2);
-
+    bool ConvertToProto(std::string* proto_data);
+    bool ConvertFromProto(const std::string& proto_data);
 
 };
 

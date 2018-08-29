@@ -15,7 +15,14 @@ namespace doc_index
 Index* Index::inst_ = NULL;
 
 Index::Index()
-{}
+    : jieba_(fLS::FLAGS_dict_path,
+             fLS::FLAGS_hmm_path,
+             fLS::FLAGS_user_dict_path,
+             fLS::FLAGS_idf_path,
+             fLS::FLAGS_stop_word_path)
+    {
+        CHECK(stop_word_dict_.Load(fLS::FLAGS_stop_word_path));
+    }
 
 //从raw_input 文件当中读数据，在内存中构建索引结构
 bool Index::Build(const std::string& input_path)
@@ -242,6 +249,96 @@ bool Index::CmpWeight(const Weight& w1, const Weight& w2)
     return w1.weight() > w2.weight();
 }
 
+//把内存中的索引数据保存到磁盘中
+bool Index::Save(const std::string& ouput_path)
+{
+    LOG(INFO) << "Index Save";
+    //1. 把内存中的索引结构序列化成字符串
+    std::string proto_data;
+    CHECK(ConvertToProto(&proto_data));
+    //2. 把序列化得到的字符串写到文件中
+    CHECK(common::FileUtil::Write(ouput_path, proto_data));
+    LOG(INFO) << "Index Save Done";
+
+    return true;
+}
+
+bool Index::ConvertToProto(std::string* proto_data)
+{
+    //index.proto中的命名空间
+    doc_index_proto::Index index; //index中包含正排索引和倒排索引(倒排索引也是数组，由于protobuf中没有hash的类型)
+    //需要把内存中的数据设置到 index 中
+    //1. 设置正排
+    for(const auto& doc_info : forward_index_)
+    {
+        //创建一个空间
+        auto* proto_doc_info = index.add_forward_index();
+        //给空间赋值
+        *proto_doc_info = doc_info;
+    }
+
+    //2. 设置倒排
+    for(const auto& inverted_pair : inverted_index_)
+    {
+        //创建空间，每一个空间为键值对结构
+        auto* kwd_info = index.add_inverted_index();
+        kwd_info->set_key(inverted_pair.first);
+        //value为Weight结构的数组，里面包含文档id和权重
+        for(const auto& weight : inverted_pair.second)
+        {
+            //创建倒排拉链的空间
+            auto* proto_weight = kwd_info->add_doc_list();
+            *proto_weight = weight;
+        }
+    }
+
+    //序列化，将序列化好的字符串保存在proto_data中
+    index.SerializeToString(proto_data);
+    return true;
+}
+
+//把磁盘上的文件加载到内存的索引结构中
+bool Index::Load(const std::string& index_path)
+{
+    LOG(INFO) << "Index Load";
+    //1. 从磁盘上把索引文件读到内存中
+    std::string proto_data;
+    CHECK(common::FileUtil::Read(index_path, &proto_data));
+    //2. 进行反序列化，转成内存中的索引结构
+    CHECK(ConvertFromProto(const std::string& proto_data));
+    LOG(INFO) << :Index Load Done';
+    return true;
+}
+
+bool Index::ConvertFromProto(const std::string& proto_data)
+{
+    //1. 对索引文件内容进行反序列化
+    doc_index_proto::Index index;
+    index.ParseFromString(proto_data);
+    //2. 已经反序列化好的数据在index中，
+    //   将index中的内容构建成内存中的索引结构
+    //   构建正排索引forward_index_
+    for(int i = 0; i < index.forward_index_size(); ++i)
+    {
+        const auto& doc_info = index.forward_index(i);
+        forward_index_.push_back(doc_info);
+    }
+
+    //3. 构建倒排索引inverted_index_
+    for(int i = 0; i < index.inverted_index_size(); ++i)
+    {
+        //kwd_info为结构体，包含关键词key和weight数组(倒排拉链)
+        const auto& kwd_info = index.inverted_index(i);
+        //找到key在inverted_index_(内存中的倒排索引)
+        //对应的倒排拉链,然后再把对应的weight插入进去
+        InvertedList& inverted_list = inverted_index_[kwd_info.key()];
+        for(int j = 0; j < kwd_info.doc_list_size(); ++j)
+        {
+            const auto& weight = kwd_info.doc_list(j);
+            inverted_list.push_back(weight);
+        }
+    }
+}
 
 } //end doc_index
 
