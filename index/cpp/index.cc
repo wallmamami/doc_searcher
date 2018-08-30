@@ -1,5 +1,5 @@
 #include <fstream>
-#include <base/base.h>
+#include "third_part/include/base/base.h"
 #include "index.h"
 
 // jieba 依赖的字典路径
@@ -383,11 +383,42 @@ const DocInfo* Index::GetDocInfo(uint64_t doc_id) const
     return &forward_index_[doc_id];
 }
 
-    //根据关键词获取到 倒排拉链（包含一组doc_id）
-    const InvertedList* GetInvertedList(const std::string& key) const;
+const InvertedList* GetInvertedList(const std::string& key) const
+{
+    //这里的find找到后会返回对应的迭代器
+    //但是[]返回的是valuei,并且find找不到
+    //的话会返回end可以用来判断是否存在
+    //但是[]不存在的话就直接插入了
+    auto it = inverted_index_.find(key);
+    if(it == inverted_index_.end())
+    {
+        return NULL;
+    }
 
-    //此处为了方便服务器进行分词，再提供一个函数
-    void CutWordWithoutStopWord(const std::string& query, std::vector<std::string>* words);
+    return &(it.second);
+}
+
+//此处为了方便服务器进行分词，再提供一个函数
+//需要把所有的暂停词从分词结果中过滤掉
+void CutWordWithoutStopWord(const std::string& query, std::vector<std::string>* words)
+{
+    //将最后的分词结果保存再word中
+    word->clear();
+    std::vector<std::string> tmp;
+    //由于分完词之后，暂停词还在
+    //这里我们需要将暂停词去掉放到word中
+    jieba_.CutForSearch(query, tmp);
+    for(std::string& token : tmp)
+    {
+        //判定是否为暂停词对大小写不敏感
+        boost::to_lower(token);
+        if(stop_word_dict_.Find(token))
+        {
+            continue;
+        }
+        words->push_back(token);
+    }
+}
 
 
 } //end doc_index

@@ -2,7 +2,7 @@
 
 #include <vector>
 #include <unordered_map>
-#include <cppjieba/jieba.hpp>
+#include "./third_part/include/cppjieba/jieba.hpp"
 #include "index.pb.h"
 #include "../../common/util.hpp"
 
