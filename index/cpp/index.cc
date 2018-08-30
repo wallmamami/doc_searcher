@@ -1,5 +1,5 @@
 #include <fstream>
-#include "third_part/include/base/base.h"
+#include <base/base.h>
 #include "index.h"
 
 // jieba 依赖的字典路径
