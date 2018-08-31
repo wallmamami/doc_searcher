@@ -21,6 +21,25 @@ public:
     {
         boost::split(*output, input, boost::is_any_of(split_char), boost::token_compress_off);
     }
+
+    static int32_t FindSentenceBeg(const std::string& content, int32_t first_pos)
+    {
+        //从first_pos位置超前找，不能用.作为句子
+        //的结束标志，因为可能存在以下情况
+        //s.begin()，但是如果是.后面还跟着空格就表示
+        //句子结束了
+        for(int32_t i = first_pos; i >= 0 ; --i)
+        {
+            if(content[i] == ';' || content[i] == ',' ||
+               content[i] == '?' || content[i] == '!' ||
+               (content[i] == '.' && content[i+1] == ' '))
+            {
+                return i + 1;
+            }
+        }
+        //如果没有找到结束标志，表示这是句子第一句话
+        return 0;
+    }
 };
 
 class DicUtil
@@ -92,6 +111,34 @@ public:
         file.read(const_cast<char*>(content->data()), len);
         file.close();
         return true;
+    }
+};
+
+class TimeUtil
+{
+public:
+    //获取到秒级时间戳
+    static int64_t TimeStamp()
+    {
+        struct timeval tv;
+        ::gettimeofday(&tv, NULL);
+        return tv.tv_sec;
+    }
+
+    //获取到毫秒时间戳
+    static int64_t TimeStampMS()
+    {
+        struct timeval tv;
+        ::gettimeofday(&tv, NULL);
+        return tv.tv_sec * 1000 + tv.tv_usec / 1000;
+    }
+
+    //微秒时间戳
+    static int64_t TimeStampUS()
+    {
+        struct timeval tv;
+        ::gettimeofday(&tv, NULL);
+        return tv.tv_sec * 1000 * 1000 + tv.tv_usec;
     }
 };
 
