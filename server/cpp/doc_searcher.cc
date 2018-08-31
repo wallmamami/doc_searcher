@@ -18,6 +18,15 @@ bool DocSearcher::Search(const Request& req, Response* resp)
     Context context(&req, resp);
     //1. 对查询词进行分词
     CutQuery(&context);
+    //2. 根据分词结果进行触发
+    Retrieve(&context);
+    // 3. 根据触发结果进行排序
+    Rank(&context);
+    // 4. 根据排序结果进行包装响应
+    PackageResponse(&context);
+    // 5. 记录处理日志
+    Log(&context);
+    return true;
 }
 
 //对查询词进行分词
