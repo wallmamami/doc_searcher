@@ -2,7 +2,9 @@
 
 #include <vector>
 #include <unordered_map>
-#include <cppjieba/jieba.hpp>
+#include <cppjieba/Jieba.hpp>
+#include <glog/logging.h>
+#include <gflags/gflags.h>
 #include "index.pb.h"
 #include "../../common/util.hpp"
 
@@ -92,10 +94,10 @@ private:
 
     const DocInfo* BuildForward(const std::string& line);
     void BuildInverted(const DocInfo& doc_info);
-    SortInverted();
-    SplitTitle(const std::string& title, DocInfo* doc_info);
-    SplitContent(const std::string& content, DocInfo* doc_info);
-    CalcWeight(int title_cnt, int content_cnt);
+    void SortInverted();
+    void SplitTitle(const std::string& title, DocInfo* doc_info);
+    void SplitContent(const std::string& content, DocInfo* doc_info);
+    int CalcWeight(int title_cnt, int content_cnt);
     static bool CmpWeight(const Weight& w1, const Weight& w2);
     bool ConvertToProto(std::string* proto_data);
     bool ConvertFromProto(const std::string& proto_data);

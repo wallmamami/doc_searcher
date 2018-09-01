@@ -208,6 +208,8 @@ int exe_cgi(int sock, char path[], char method[], char* query_string, int* err)
     char filename[MAX/16];
     char filename_env[MAX];
     //如果是GET方法,清空请求行和请求头部
+    printf("path = %s\n", path);
+    printf("query_string: %s\n", query_string);
     if(strcasecmp(method, "GET") == 0)
     {
         clear_header(sock);

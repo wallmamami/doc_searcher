@@ -82,7 +82,7 @@ void Search(const Request& req, Response* resp)
     //1. 先定义一个RPC client对象
     RpcClient client;
     //2. 再定义一个RpcChannel对象，描述了一个连接
-    RpcChannel channel(&client, fLs::FLAGS_server_addr);
+    RpcChannel channel(&client, fLS::FLAGS_server_addr);
     //3. 再定义一个DocServerAPI_Stub，用来表示
     //   调用服务器的哪一个函数
     doc_server_proto::DocServerAPI_Stub stub(&channel);
@@ -104,7 +104,7 @@ void Search(const Request& req, Response* resp)
     }
 }
 
-void ParseResponse(resp)
+void ParseResponse(const Response& resp)
 {
     // 返回的响应的结果是HTML
     // 此处使用ctemplate完成页面构造

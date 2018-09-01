@@ -29,7 +29,7 @@ bool Index::Build(const std::string& input_path)
 {
     LOG(INFO) << "Index Build";
     //1.按行读取文件内容，每一行都是一个文件
-    std::ifstream file(input_path.c_st());
+    std::ifstream file(input_path.c_str());
     CHECK(file.is_open()) << "input_path:" << input_path;
     std::string line;
     while(std::getline(file, line))
@@ -54,7 +54,6 @@ bool Index::Build(const std::string& input_path)
 
 const DocInfo* Index::BuildForward(const std::string& line)
 {
-    //1. 先对字符串进行切分(自己定义的\3)
     std::vector<std::string> tokens;
     //当前Split 不会破坏原字符串
     common::StringUtil::Split(line, &tokens, "\3");
@@ -63,7 +62,6 @@ const DocInfo* Index::BuildForward(const std::string& line)
         LOG(FATAL) << "line split not 3 tokens! tokens.size() = " << tokens.size();
         return NULL;
     }
-
     //切分成功后的tokens，保存了id,title,content等信息(每个元素为一个信息)，id为正排数组的size
     //2. 构造一个DocInfo结构，把切分的结果赋值到DocInfo
     //   除了分词结果之外都能直接进行赋值
@@ -71,7 +69,7 @@ const DocInfo* Index::BuildForward(const std::string& line)
     doc_info.set_id(forward_index_.size());
     doc_info.set_title(tokens[1]);
     doc_info.set_content(tokens[2]);
-    doc_info.set_jump_url(tokens[3]);
+    doc_info.set_jump_url(tokens[0]);
     //这里为了方便，将show_url与jump_url设置为一样
     //实际上show_url只包含jump_url的域名
     doc_info.set_show_url(doc_info.jump_url());
@@ -84,7 +82,7 @@ const DocInfo* Index::BuildForward(const std::string& line)
 
     //4. 将这个DocInfo 插入到正排索引中
     forward_index_.push_back(doc_info);
-    return &forward_index_back();
+    return &forward_index_.back();
 
 }
 
@@ -103,7 +101,7 @@ void Index::SplitTitle(const std::string& title, DocInfo* doc_info)
         return;
     }
 
-    for(size_t i = 0; i < word.size(); ++i)
+    for(size_t i = 0; i < words.size(); ++i)
     {
         //先创建一个title_token的pair的空间，然后再给这个空间赋值
         auto* token = doc_info->add_title_token();
@@ -141,7 +139,7 @@ void Index::SplitContent(const std::string& content, DocInfo* doc_info)
     for(size_t i = 0; i < words.size(); ++i)
     {
         //先在doc_info里面的content_token数组中创建一个pair空间
-        auto* token = doc_info->add_content_token;
+        auto* token = doc_info->add_content_token();
         token->set_beg(words[i].offset);
         if(i + 1 < words.size())
         {
@@ -211,13 +209,13 @@ void Index::BuildInverted(const DocInfo& doc_info)
     for(const auto& word_pair : word_cnt_map)
     {
         Weight weight;
-        weight.set_doc_id(doc_info_id());
+        weight.set_doc_id(doc_info.id());
         //这里构造Weight结构，得先计算权重，second为value，first为key
         weight.set_weight(CalcWeight(word_pair.second.title_cnt, word_pair.second.content_cnt));
         weight.set_first_pos(word_pair.second.first_pos);
 
         //先获取到当前词对应的倒排拉链
-        InvertedList& inverted_list = inverteed_index[word_pair.first];
+        InvertedList& inverted_list = inverted_index_[word_pair.first];
         inverted_list.push_back(weight);
     }
 
@@ -301,12 +299,14 @@ bool Index::ConvertToProto(std::string* proto_data)
 bool Index::Load(const std::string& index_path)
 {
     LOG(INFO) << "Index Load";
+    std::cout << "Into Load\n";
     //1. 从磁盘上把索引文件读到内存中
     std::string proto_data;
     CHECK(common::FileUtil::Read(index_path, &proto_data));
+    std::cout << "read over\n";
     //2. 进行反序列化，转成内存中的索引结构
-    CHECK(ConvertFromProto(const std::string& proto_data));
-    LOG(INFO) << :Index Load Done';
+    CHECK(ConvertFromProto(proto_data));
+    LOG(INFO) << "Index Load Done";
     return true;
 }
 
@@ -338,6 +338,7 @@ bool Index::ConvertFromProto(const std::string& proto_data)
             inverted_list.push_back(weight);
         }
     }
+    return true;
 }
 
 //调试用的接口，把内存中的索引结构按照一定的格式打印到文件中
@@ -383,7 +384,7 @@ const DocInfo* Index::GetDocInfo(uint64_t doc_id) const
     return &forward_index_[doc_id];
 }
 
-const InvertedList* GetInvertedList(const std::string& key) const
+const InvertedList* Index::GetInvertedList(const std::string& key) const
 {
     //这里的find找到后会返回对应的迭代器
     //但是[]返回的是valuei,并且find找不到
@@ -395,15 +396,15 @@ const InvertedList* GetInvertedList(const std::string& key) const
         return NULL;
     }
 
-    return &(it.second);
+    return &(it->second);
 }
 
 //此处为了方便服务器进行分词，再提供一个函数
 //需要把所有的暂停词从分词结果中过滤掉
-void CutWordWithoutStopWord(const std::string& query, std::vector<std::string>* words)
+void Index::CutWordWithoutStopWord(const std::string& query, std::vector<std::string>* words)
 {
     //将最后的分词结果保存再word中
-    word->clear();
+    words->clear();
     std::vector<std::string> tmp;
     //由于分完词之后，暂停词还在
     //这里我们需要将暂停词去掉放到word中
