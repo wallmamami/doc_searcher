@@ -5,7 +5,7 @@ package doc_server_proto;
 //就需要加上下面的选项
 option cc_generic_services = true;
 
-//把请求和响应的结构西安定义出来
+//把请求和响应的结构先定义出来
 message Request
 {
     //一条请求身份标识，将来方便查看日志
@@ -39,7 +39,6 @@ message Response
     //optional这种类型表示结构可有可无
     optional int32 err_code = 4;
 };
-
 
 // RPC 需要远程调用的函数是什么
 service DocServerAPI 
