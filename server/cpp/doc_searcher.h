@@ -1,14 +1,16 @@
 #pragma once
 
 #include "server.pb.h"
+#include <glog/logging.h>
+#include <gflags/gflags.h>
 #include "../../index/cpp/index.h"
 
 
 namespace doc_server
 {
     //服务器的proto文件中定义的类型
-    typedef doc_index_proto::Request Request;
-    typedef doc_index_proto::Response Response;
+    typedef doc_server_proto::Request Request;
+    typedef doc_server_proto::Response Response;
     //index的proto文件中定义的类型
     typedef doc_index_proto::Weight Weight;
     typedef doc_index::Index Index;
@@ -44,12 +46,12 @@ private:
     bool Rank(Context* context);
     //根据排序的结果拼装成响应
     bool PackageResponse(Context* context);
+    //生成描述信息
+    std::string GenDesc(int first_pos, const std::string& content);
     //打印请求日志
     bool Log(Context* context);
     //排序需要的比较函数
     static bool CmpWeightPtr(const Weight* w1, const Weight* w2);
-    //生成描述信息
-    std::string GenDesc(int first_pos, const std::string& content);
     //替换html中的转义字符
     void ReplaceEscape(std::string* desc);
 };

@@ -30,19 +30,19 @@ bool DocSearcher::Search(const Request& req, Response* resp)
 }
 
 //对查询词进行分词
-bool CutQuery(Context* context)
+bool DocSearcher::CutQuery(Context* context)
 {
     // 调用当时索引结构栈总提供的接口
     // 因为直接调用只是分词，并不会
     // 去掉暂停词
-    Index* index = Index::Indstance();
+    Index* index = Index::Instance();
     index->CutWordWithoutStopWord(context->req->query(), &context->words);
     LOG(INFO) << "CutQuery Done! sid=" << context->req->sid();
     return true;
 }
 
 //根据查询词结果进行触发
-bool Retrieve(Context* context)
+bool DocSearcher::Retrieve(Context* context)
 {
     Index* index = Index::Instance();
     //根据分词结果，到索引中找到所有的倒排拉链
@@ -73,19 +73,19 @@ bool DocSearcher::Rank(Context* context)
     //虽然之前再索引结构中已经对每个倒排拉链排过序了
     //但是all_query_chain保存了多个倒排拉链，所以还要
     //对其进行排序，规则也是按照权重降序排序
-    std::sort(context->all_query_chain.begin(), context->all_query_chain.end(); CmpWeightPtr);
+    std::sort(context->all_query_chain.begin(), context->all_query_chain.end(), CmpWeightPtr);
 
     return true;
 }
 
 //排序需要的比较函数
-static bool CmpWeightPtr(const Weight* w1, const Weight* w2)
+bool DocSearcher::CmpWeightPtr(const Weight* w1, const Weight* w2)
 {
     return w1->weight() > w2->weight();
 }
 
 //根据排序的结果拼装成响应
-bool PackageResponse(Context* context)
+bool DocSearcher::PackageResponse(Context* context)
 {
     //构造出最终的Response结构
     //resp中主要包含item数组

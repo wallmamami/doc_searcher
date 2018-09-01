@@ -43,7 +43,9 @@ public:
 
 int main(int argc, char* argv[])
 {
-    base::InitApp(argc, argv);
+    google::InitGoogleLogging(argv[0]);
+  	fLS::FLAGS_log_dir = "../log/"; 
+    gflags::ParseCommandLineFlags(&argc, &argv, true);
     using namespace sofa::pbrpc;
 
     //1. 加载初始化索引模块(在Index模块中已经生成索引结构并保存在文件当中)
