@@ -52,7 +52,6 @@ int main(int argc, char* argv[])
     doc_index::Index* index = doc_index::Index::Instance();
     CHECK(index->Load(fLS::FLAGS_index_path));
     LOG(INFO) << "Index Load Done !";
-    std::cout << "Index Load Done";
     //1. 定义一个 RpcServerOptions 对象
     //   这个对象描述了RPC服务器一些相关选项
     //   主要是为了定义线程池中线程的个数

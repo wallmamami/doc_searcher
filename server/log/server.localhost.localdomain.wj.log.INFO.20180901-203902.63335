@@ -1,7 +1,0 @@
-Log file created at: 2018/09/01 20:39:02
-Running on machine: localhost.localdomain
-Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
-I0901 20:39:02.740717 63335 index.cc:301] Index Load
-I0901 20:39:09.760480 63335 index.cc:309] Index Load Done
-I0901 20:39:09.765187 63335 server_main.cc:54] Index Load Done !
-I0901 20:40:39.620582 63354 doc_searcher.cc:40] CutQuery Done! sid=0

@@ -1,0 +1,19 @@
+Log file created at: 2018/09/02 14:14:19
+Running on machine: localhost.localdomain
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0902 14:14:19.030274 89463 index.cc:301] Index Load
+I0902 14:14:22.862298 89463 index.cc:309] Index Load Done
+I0902 14:14:22.865229 89463 server_main.cc:54] Index Load Done !
+I0902 14:14:46.928094 89471 doc_searcher.cc:44] CutQuery Done! sid=0
+I0902 14:14:46.928130 89471 doc_searcher.cc:22] Retrieve Begin!
+I0902 14:14:46.928139 89471 doc_searcher.cc:62] inverted_list NULL
+I0902 14:14:46.928144 89471 doc_searcher.cc:24] Retrieve Done!
+I0902 14:14:46.928148 89471 doc_searcher.cc:27] Rank Done!
+I0902 14:14:46.928153 89471 doc_searcher.cc:123] 0
+I0902 14:14:46.928158 89471 doc_searcher.cc:30] Retrieve Done!
+I0902 14:14:46.928239 89471 doc_searcher.cc:178] [Request]sid: 0
+timestamp: 1535868886
+query: "balanced"
+I0902 14:14:46.928311 89471 doc_searcher.cc:179] [Response]sid: 0
+timestamp: 1535868886
+err_code: 0

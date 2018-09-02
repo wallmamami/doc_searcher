@@ -1,0 +1,1370 @@
+Log file created at: 2018/09/02 13:04:12
+Running on machine: localhost.localdomain
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0902 13:04:12.723114 82887 index.cc:301] Index Load
+I0902 13:04:17.970913 82887 index.cc:309] Index Load Done
+I0902 13:04:17.974349 82887 server_main.cc:54] Index Load Done !
+I0902 13:04:29.183806 82896 doc_searcher.cc:43] CutQuery Done! sid=0
+I0902 13:04:29.183854 82896 doc_searcher.cc:23] Retrieve Done!
+I0902 13:04:29.183871 82896 doc_searcher.cc:26] Rank Done!
+I0902 13:04:29.183887 82896 doc_searcher.cc:29] Retrieve Done!
+I0902 13:04:29.183997 82896 doc_searcher.cc:175] [Request]sid: 0
+timestamp: 1535864668
+query: "filesystem"
+I0902 13:04:29.184048 82896 doc_searcher.cc:176] [Response]sid: 0
+timestamp: 1535864669
+err_code: 0
+I0902 13:08:16.711452 82896 doc_searcher.cc:43] CutQuery Done! sid=0
+I0902 13:08:16.737428 82896 doc_searcher.cc:23] Retrieve Done!
+I0902 13:08:16.737455 82896 doc_searcher.cc:26] Rank Done!
+I0902 13:08:16.737466 82896 doc_searcher.cc:29] Retrieve Done!
+I0902 13:08:16.737578 82896 doc_searcher.cc:175] [Request]sid: 0
+timestamp: 1535864896
+query: "filesystem"
+I0902 13:08:16.737609 82896 doc_searcher.cc:176] [Response]sid: 0
+timestamp: 1535864896
+err_code: 0
+I0902 13:12:46.148268 82897 doc_searcher.cc:43] CutQuery Done! sid=0
+I0902 13:12:46.169494 82897 doc_searcher.cc:23] Retrieve Done!
+I0902 13:12:46.169538 82897 doc_searcher.cc:26] Rank Done!
+I0902 13:12:46.169560 82897 doc_searcher.cc:29] Retrieve Done!
+I0902 13:12:46.169646 82897 doc_searcher.cc:175] [Request]sid: 0
+timestamp: 1535865165
+query: "filesystem"
+I0902 13:12:46.169687 82897 doc_searcher.cc:176] [Response]sid: 0
+timestamp: 1535865166
+err_code: 0
+I0902 13:15:10.873765 82898 doc_searcher.cc:43] CutQuery Done! sid=0
+I0902 13:15:10.904357 82898 doc_searcher.cc:23] Retrieve Done!
+I0902 13:15:10.904394 82898 doc_searcher.cc:26] Rank Done!
+I0902 13:15:10.921357 82898 doc_searcher.cc:29] Retrieve Done!
+I0902 13:15:10.921402 82898 doc_searcher.cc:175] [Request]sid: 0
+timestamp: 1535865310
+query: "balanced+file"
+I0902 13:15:10.921754 82898 doc_searcher.cc:176] [Response]sid: 0
+timestamp: 1535865310
+item {
+  title: "Function template file_time_to_microseconds"
+  desc: " Function template file_time_to_microseconds Home Libraries People FAQ More Function template file_time_to_microseconds boost::date_time::winapi::file_time_t..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/date_time/winapi/file_time_to_microseconds.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/date_time/winapi/file_time_to_microseconds.html"
+}
+item {
+  title: "Class template basic_managed_mapped_file"
+  desc: " Class template basic_managed_mapped_file Home Libraries People FAQ More Class template basic_managed_mapped_file boost::interprocess::basic_managed_mapped_f..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/interprocess/basic_managed_mapped_file.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/interprocess/basic_managed_mapped_file.html"
+}
+item {
+  title: "Class file_lock"
+  desc: " Class file_lock Home Libraries People FAQ More Class file_lock boost::interprocess::file_lock Synopsis // In header: &lt;boost/interprocess/sync/file_lock.hpp&gt;..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/interprocess/file_lock.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/interprocess/file_lock.html"
+}
+item {
+  title: "Class file_mapping"
+  desc: " Class file_mapping Home Libraries People FAQ More Class file_mapping boost::interprocess::file_mapping Synopsis // In header: &lt;boost/interprocess/file_mappi..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/interprocess/file_mapping.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/interprocess/file_mapping.html"
+}
+item {
+  title: "Class remove_file_on_destroy"
+  desc: " Class remove_file_on_destroy Home Libraries People FAQ More Class remove_file_on_destroy boost::interprocess::remove_file_on_destroy Synopsis // In header: ..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/interprocess/remove_file_on_destroy.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/interprocess/remove_file_on_destroy.html"
+}
+item {
+  title: "Class invalid_config_file_syntax"
+  desc: " Class invalid_config_file_syntax Home Libraries People FAQ More Class invalid_config_file_syntax boost::program_options::invalid_config_file_syntax Synopsis..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/program_options/invalid_config_file_syntax.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/program_options/invalid_config_file_syntax.html"
+}
+item {
+  title: "Function template parse_config_file"
+  desc: " Function template parse_config_file Home Libraries People FAQ More Function template parse_config_file boost::program_options::parse_config_file Synopsis //..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/program_options/parse_config_f_idp45020640.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/program_options/parse_config_f_idp45020640.html"
+}
+item {
+  title: "Function template parse_config_file"
+  desc: " Function template parse_config_file Home Libraries People FAQ More Function template parse_config_file boost::program_options::parse_config_file Synopsis //..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/program_options/parse_config_f_idp67595728.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/program_options/parse_config_f_idp67595728.html"
+}
+item {
+  title: "Class reading_file"
+  desc: " Class reading_file Home Libraries People FAQ More Class reading_file boost::program_options::reading_file Synopsis // In header: &lt;boost/program_options/erro..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/program_options/reading_file.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/program_options/reading_file.html"
+}
+item {
+  title: "Stream-Oriented File Descriptors"
+  desc: " Stream-Oriented File Descriptors Home Libraries People FAQ More Stream-Oriented         File Descriptors           Boost.Asio includes classes added to perm..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/overview/posix/stream_descriptor.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/overview/posix/stream_descriptor.html"
+}
+item {
+  title: "ssl::context::file_format"
+  desc: " ssl::context::file_format Home Libraries People FAQ More ssl::context::file_format             File format types.          enum file_format                 ..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/file_format.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/file_format.html"
+}
+item {
+  title: "ssl::context::load_verify_file"
+  desc: " ssl::context::load_verify_file Home Libraries People FAQ More ssl::context::load_verify_file             Load a certification authority file for performing ..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/load_verify_file.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/load_verify_file.html"
+}
+item {
+  title: "ssl::context::use_certificate_chain_file"
+  desc: " ssl::context::use_certificate_chain_file Home Libraries People FAQ More ssl::context::use_certificate_chain_file             Use a certificate chain from a ..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_certificate_chain_file.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_certificate_chain_file.html"
+}
+item {
+  title: "ssl::context::use_certificate_file"
+  desc: " ssl::context::use_certificate_file Home Libraries People FAQ More ssl::context::use_certificate_file             Use a certificate from a file.          voi..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_certificate_file.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_certificate_file.html"
+}
+item {
+  title: "ssl::context::use_private_key_file"
+  desc: " ssl::context::use_private_key_file Home Libraries People FAQ More ssl::context::use_private_key_file             Use a private key from a file.          voi..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_private_key_file.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_private_key_file.html"
+}
+item {
+  title: "ssl::context::use_rsa_private_key_file"
+  desc: " ssl::context::use_rsa_private_key_file Home Libraries People FAQ More ssl::context::use_rsa_private_key_file             Use an RSA private key from a file...."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_rsa_private_key_file.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_rsa_private_key_file.html"
+}
+item {
+  title: "ssl::context::use_tmp_dh_file"
+  desc: " ssl::context::use_tmp_dh_file Home Libraries People FAQ More ssl::context::use_tmp_dh_file             Use the specified file to obtain the temporary       ..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_tmp_dh_file.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_tmp_dh_file.html"
+}
+item {
+  title: "ssl::context::load_verify_file (1 of 2 overloads)"
+  desc: " ssl::context::load_verify_file (1 of 2 overloads) Home Libraries People FAQ More ssl::context::load_verify_file           (1 of 2 overloads)             Loa..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/load_verify_file/overload1.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/load_verify_file/overload1.html"
+}
+item {
+  title: "ssl::context::load_verify_file (2 of 2 overloads)"
+  desc: " ssl::context::load_verify_file (2 of 2 overloads) Home Libraries People FAQ More ssl::context::load_verify_file           (2 of 2 overloads)             Loa..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/load_verify_file/overload2.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/load_verify_file/overload2.html"
+}
+item {
+  title: "ssl::context::use_certificate_chain_file (1 of 2 overloads)"
+  desc: " ssl::context::use_certificate_chain_file (1 of 2 overloads) Home Libraries People FAQ More ssl::context::use_certificate_chain_file           (1 of 2 overlo..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_certificate_chain_file/overload1.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_certificate_chain_file/overload1.html"
+}
+item {
+  title: "ssl::context::use_certificate_chain_file (2 of 2 overloads)"
+  desc: " ssl::context::use_certificate_chain_file (2 of 2 overloads) Home Libraries People FAQ More ssl::context::use_certificate_chain_file           (2 of 2 overlo..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_certificate_chain_file/overload2.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_certificate_chain_file/overload2.html"
+}
+item {
+  title: "ssl::context::use_certificate_file (1 of 2 overloads)"
+  desc: " ssl::context::use_certificate_file (1 of 2 overloads) Home Libraries People FAQ More ssl::context::use_certificate_file           (1 of 2 overloads)        ..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_certificate_file/overload1.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_certificate_file/overload1.html"
+}
+item {
+  title: "ssl::context::use_certificate_file (2 of 2 overloads)"
+  desc: " ssl::context::use_certificate_file (2 of 2 overloads) Home Libraries People FAQ More ssl::context::use_certificate_file           (2 of 2 overloads)        ..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_certificate_file/overload2.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_certificate_file/overload2.html"
+}
+item {
+  title: "ssl::context::use_private_key_file (1 of 2 overloads)"
+  desc: " ssl::context::use_private_key_file (1 of 2 overloads) Home Libraries People FAQ More ssl::context::use_private_key_file           (1 of 2 overloads)        ..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_private_key_file/overload1.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_private_key_file/overload1.html"
+}
+item {
+  title: "ssl::context::use_private_key_file (2 of 2 overloads)"
+  desc: " ssl::context::use_private_key_file (2 of 2 overloads) Home Libraries People FAQ More ssl::context::use_private_key_file           (2 of 2 overloads)        ..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_private_key_file/overload2.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_private_key_file/overload2.html"
+}
+item {
+  title: "ssl::context::use_rsa_private_key_file (1 of 2 overloads)"
+  desc: " ssl::context::use_rsa_private_key_file (1 of 2 overloads) Home Libraries People FAQ More ssl::context::use_rsa_private_key_file           (1 of 2 overloads)..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_rsa_private_key_file/overload1.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_rsa_private_key_file/overload1.html"
+}
+item {
+  title: "ssl::context::use_rsa_private_key_file (2 of 2 overloads)"
+  desc: " ssl::context::use_rsa_private_key_file (2 of 2 overloads) Home Libraries People FAQ More ssl::context::use_rsa_private_key_file           (2 of 2 overloads)..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_rsa_private_key_file/overload2.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_rsa_private_key_file/overload2.html"
+}
+item {
+  title: "ssl::context::use_tmp_dh_file (1 of 2 overloads)"
+  desc: " ssl::context::use_tmp_dh_file (1 of 2 overloads) Home Libraries People FAQ More ssl::context::use_tmp_dh_file           (1 of 2 overloads)             Use t..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_tmp_dh_file/overload1.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_tmp_dh_file/overload1.html"
+}
+item {
+  title: "ssl::context::use_tmp_dh_file (2 of 2 overloads)"
+  desc: " ssl::context::use_tmp_dh_file (2 of 2 overloads) Home Libraries People FAQ More ssl::context::use_tmp_dh_file           (2 of 2 overloads)             Use t..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_tmp_dh_file/overload2.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_tmp_dh_file/overload2.html"
+}
+item {
+  title: "ssl::context_base::file_format"
+  desc: " ssl::context_base::file_format Home Libraries People FAQ More ssl::context_base::file_format             File format types.          enum file_format       ..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context_base/file_format.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context_base/file_format.html"
+}
+err_code: 0
+I0902 13:15:38.265307 82896 doc_searcher.cc:43] CutQuery Done! sid=0
+I0902 13:15:38.265324 82896 doc_searcher.cc:23] Retrieve Done!
+I0902 13:15:38.265329 82896 doc_searcher.cc:26] Rank Done!
+I0902 13:15:38.265333 82896 doc_searcher.cc:29] Retrieve Done!
+I0902 13:15:38.265470 82896 doc_searcher.cc:175] [Request]sid: 0
+timestamp: 1535865337
+query: "balanced"
+I0902 13:15:38.265497 82896 doc_searcher.cc:176] [Response]sid: 0
+timestamp: 1535865338
+err_code: 0
+I0902 13:15:46.510996 82896 doc_searcher.cc:43] CutQuery Done! sid=0
+I0902 13:15:46.511400 82896 doc_searcher.cc:23] Retrieve Done!
+I0902 13:15:46.511430 82896 doc_searcher.cc:26] Rank Done!
+I0902 13:15:46.513941 82896 doc_searcher.cc:29] Retrieve Done!
+I0902 13:15:46.513978 82896 doc_searcher.cc:175] [Request]sid: 0
+timestamp: 1535865346
+query: "balanced+file"
+I0902 13:15:46.514207 82896 doc_searcher.cc:176] [Response]sid: 0
+timestamp: 1535865346
+item {
+  title: "Function template file_time_to_microseconds"
+  desc: " Function template file_time_to_microseconds Home Libraries People FAQ More Function template file_time_to_microseconds boost::date_time::winapi::file_time_t..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/date_time/winapi/file_time_to_microseconds.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/date_time/winapi/file_time_to_microseconds.html"
+}
+item {
+  title: "Class template basic_managed_mapped_file"
+  desc: " Class template basic_managed_mapped_file Home Libraries People FAQ More Class template basic_managed_mapped_file boost::interprocess::basic_managed_mapped_f..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/interprocess/basic_managed_mapped_file.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/interprocess/basic_managed_mapped_file.html"
+}
+item {
+  title: "Class file_lock"
+  desc: " Class file_lock Home Libraries People FAQ More Class file_lock boost::interprocess::file_lock Synopsis // In header: &lt;boost/interprocess/sync/file_lock.hpp&gt;..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/interprocess/file_lock.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/interprocess/file_lock.html"
+}
+item {
+  title: "Class file_mapping"
+  desc: " Class file_mapping Home Libraries People FAQ More Class file_mapping boost::interprocess::file_mapping Synopsis // In header: &lt;boost/interprocess/file_mappi..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/interprocess/file_mapping.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/interprocess/file_mapping.html"
+}
+item {
+  title: "Class remove_file_on_destroy"
+  desc: " Class remove_file_on_destroy Home Libraries People FAQ More Class remove_file_on_destroy boost::interprocess::remove_file_on_destroy Synopsis // In header: ..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/interprocess/remove_file_on_destroy.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/interprocess/remove_file_on_destroy.html"
+}
+item {
+  title: "Class invalid_config_file_syntax"
+  desc: " Class invalid_config_file_syntax Home Libraries People FAQ More Class invalid_config_file_syntax boost::program_options::invalid_config_file_syntax Synopsis..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/program_options/invalid_config_file_syntax.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/program_options/invalid_config_file_syntax.html"
+}
+item {
+  title: "Function template parse_config_file"
+  desc: " Function template parse_config_file Home Libraries People FAQ More Function template parse_config_file boost::program_options::parse_config_file Synopsis //..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/program_options/parse_config_f_idp45020640.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/program_options/parse_config_f_idp45020640.html"
+}
+item {
+  title: "Function template parse_config_file"
+  desc: " Function template parse_config_file Home Libraries People FAQ More Function template parse_config_file boost::program_options::parse_config_file Synopsis //..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/program_options/parse_config_f_idp67595728.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/program_options/parse_config_f_idp67595728.html"
+}
+item {
+  title: "Class reading_file"
+  desc: " Class reading_file Home Libraries People FAQ More Class reading_file boost::program_options::reading_file Synopsis // In header: &lt;boost/program_options/erro..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/program_options/reading_file.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/program_options/reading_file.html"
+}
+item {
+  title: "Stream-Oriented File Descriptors"
+  desc: " Stream-Oriented File Descriptors Home Libraries People FAQ More Stream-Oriented         File Descriptors           Boost.Asio includes classes added to perm..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/overview/posix/stream_descriptor.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/overview/posix/stream_descriptor.html"
+}
+item {
+  title: "ssl::context::file_format"
+  desc: " ssl::context::file_format Home Libraries People FAQ More ssl::context::file_format             File format types.          enum file_format                 ..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/file_format.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/file_format.html"
+}
+item {
+  title: "ssl::context::load_verify_file"
+  desc: " ssl::context::load_verify_file Home Libraries People FAQ More ssl::context::load_verify_file             Load a certification authority file for performing ..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/load_verify_file.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/load_verify_file.html"
+}
+item {
+  title: "ssl::context::use_certificate_chain_file"
+  desc: " ssl::context::use_certificate_chain_file Home Libraries People FAQ More ssl::context::use_certificate_chain_file             Use a certificate chain from a ..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_certificate_chain_file.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_certificate_chain_file.html"
+}
+item {
+  title: "ssl::context::use_certificate_file"
+  desc: " ssl::context::use_certificate_file Home Libraries People FAQ More ssl::context::use_certificate_file             Use a certificate from a file.          voi..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_certificate_file.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_certificate_file.html"
+}
+item {
+  title: "ssl::context::use_private_key_file"
+  desc: " ssl::context::use_private_key_file Home Libraries People FAQ More ssl::context::use_private_key_file             Use a private key from a file.          voi..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_private_key_file.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_private_key_file.html"
+}
+item {
+  title: "ssl::context::use_rsa_private_key_file"
+  desc: " ssl::context::use_rsa_private_key_file Home Libraries People FAQ More ssl::context::use_rsa_private_key_file             Use an RSA private key from a file...."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_rsa_private_key_file.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_rsa_private_key_file.html"
+}
+item {
+  title: "ssl::context::use_tmp_dh_file"
+  desc: " ssl::context::use_tmp_dh_file Home Libraries People FAQ More ssl::context::use_tmp_dh_file             Use the specified file to obtain the temporary       ..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_tmp_dh_file.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_tmp_dh_file.html"
+}
+item {
+  title: "ssl::context::load_verify_file (1 of 2 overloads)"
+  desc: " ssl::context::load_verify_file (1 of 2 overloads) Home Libraries People FAQ More ssl::context::load_verify_file           (1 of 2 overloads)             Loa..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/load_verify_file/overload1.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/load_verify_file/overload1.html"
+}
+item {
+  title: "ssl::context::load_verify_file (2 of 2 overloads)"
+  desc: " ssl::context::load_verify_file (2 of 2 overloads) Home Libraries People FAQ More ssl::context::load_verify_file           (2 of 2 overloads)             Loa..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/load_verify_file/overload2.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/load_verify_file/overload2.html"
+}
+item {
+  title: "ssl::context::use_certificate_chain_file (1 of 2 overloads)"
+  desc: " ssl::context::use_certificate_chain_file (1 of 2 overloads) Home Libraries People FAQ More ssl::context::use_certificate_chain_file           (1 of 2 overlo..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_certificate_chain_file/overload1.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_certificate_chain_file/overload1.html"
+}
+item {
+  title: "ssl::context::use_certificate_chain_file (2 of 2 overloads)"
+  desc: " ssl::context::use_certificate_chain_file (2 of 2 overloads) Home Libraries People FAQ More ssl::context::use_certificate_chain_file           (2 of 2 overlo..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_certificate_chain_file/overload2.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_certificate_chain_file/overload2.html"
+}
+item {
+  title: "ssl::context::use_certificate_file (1 of 2 overloads)"
+  desc: " ssl::context::use_certificate_file (1 of 2 overloads) Home Libraries People FAQ More ssl::context::use_certificate_file           (1 of 2 overloads)        ..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_certificate_file/overload1.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_certificate_file/overload1.html"
+}
+item {
+  title: "ssl::context::use_certificate_file (2 of 2 overloads)"
+  desc: " ssl::context::use_certificate_file (2 of 2 overloads) Home Libraries People FAQ More ssl::context::use_certificate_file           (2 of 2 overloads)        ..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_certificate_file/overload2.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_certificate_file/overload2.html"
+}
+item {
+  title: "ssl::context::use_private_key_file (1 of 2 overloads)"
+  desc: " ssl::context::use_private_key_file (1 of 2 overloads) Home Libraries People FAQ More ssl::context::use_private_key_file           (1 of 2 overloads)        ..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_private_key_file/overload1.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_private_key_file/overload1.html"
+}
+item {
+  title: "ssl::context::use_private_key_file (2 of 2 overloads)"
+  desc: " ssl::context::use_private_key_file (2 of 2 overloads) Home Libraries People FAQ More ssl::context::use_private_key_file           (2 of 2 overloads)        ..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_private_key_file/overload2.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_private_key_file/overload2.html"
+}
+item {
+  title: "ssl::context::use_rsa_private_key_file (1 of 2 overloads)"
+  desc: " ssl::context::use_rsa_private_key_file (1 of 2 overloads) Home Libraries People FAQ More ssl::context::use_rsa_private_key_file           (1 of 2 overloads)..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_rsa_private_key_file/overload1.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_rsa_private_key_file/overload1.html"
+}
+item {
+  title: "ssl::context::use_rsa_private_key_file (2 of 2 overloads)"
+  desc: " ssl::context::use_rsa_private_key_file (2 of 2 overloads) Home Libraries People FAQ More ssl::context::use_rsa_private_key_file           (2 of 2 overloads)..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_rsa_private_key_file/overload2.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_rsa_private_key_file/overload2.html"
+}
+item {
+  title: "ssl::context::use_tmp_dh_file (1 of 2 overloads)"
+  desc: " ssl::context::use_tmp_dh_file (1 of 2 overloads) Home Libraries People FAQ More ssl::context::use_tmp_dh_file           (1 of 2 overloads)             Use t..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_tmp_dh_file/overload1.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_tmp_dh_file/overload1.html"
+}
+item {
+  title: "ssl::context::use_tmp_dh_file (2 of 2 overloads)"
+  desc: " ssl::context::use_tmp_dh_file (2 of 2 overloads) Home Libraries People FAQ More ssl::context::use_tmp_dh_file           (2 of 2 overloads)             Use t..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_tmp_dh_file/overload2.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_tmp_dh_file/overload2.html"
+}
+item {
+  title: "ssl::context_base::file_format"
+  desc: " ssl::context_base::file_format Home Libraries People FAQ More ssl::context_base::file_format             File format types.          enum file_format       ..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context_base/file_format.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context_base/file_format.html"
+}
+err_code: 0
+I0902 13:16:55.553596 82896 doc_searcher.cc:43] CutQuery Done! sid=0
+I0902 13:16:55.553957 82896 doc_searcher.cc:23] Retrieve Done!
+I0902 13:16:55.553997 82896 doc_searcher.cc:26] Rank Done!
+I0902 13:16:55.557111 82896 doc_searcher.cc:29] Retrieve Done!
+I0902 13:16:55.557154 82896 doc_searcher.cc:175] [Request]sid: 0
+timestamp: 1535865415
+query: "balanced%20file"
+I0902 13:16:55.557498 82896 doc_searcher.cc:176] [Response]sid: 0
+timestamp: 1535865415
+item {
+  title: "ssl::context::use_tmp_dh_file"
+  desc: " ssl::context::use_tmp_dh_file Home Libraries People FAQ More ssl::context::use_tmp_dh_file             Use the specified file to obtain the temporary       ..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_tmp_dh_file.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_tmp_dh_file.html"
+}
+item {
+  title: "Class template basic_managed_mapped_file"
+  desc: " Class template basic_managed_mapped_file Home Libraries People FAQ More Class template basic_managed_mapped_file boost::interprocess::basic_managed_mapped_f..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/interprocess/basic_managed_mapped_file.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/interprocess/basic_managed_mapped_file.html"
+}
+item {
+  title: "Class file_lock"
+  desc: " Class file_lock Home Libraries People FAQ More Class file_lock boost::interprocess::file_lock Synopsis // In header: &lt;boost/interprocess/sync/file_lock.hpp&gt;..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/interprocess/file_lock.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/interprocess/file_lock.html"
+}
+item {
+  title: "Class file_mapping"
+  desc: " Class file_mapping Home Libraries People FAQ More Class file_mapping boost::interprocess::file_mapping Synopsis // In header: &lt;boost/interprocess/file_mappi..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/interprocess/file_mapping.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/interprocess/file_mapping.html"
+}
+item {
+  title: "Class remove_file_on_destroy"
+  desc: " Class remove_file_on_destroy Home Libraries People FAQ More Class remove_file_on_destroy boost::interprocess::remove_file_on_destroy Synopsis // In header: ..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/interprocess/remove_file_on_destroy.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/interprocess/remove_file_on_destroy.html"
+}
+item {
+  title: "Class invalid_config_file_syntax"
+  desc: " Class invalid_config_file_syntax Home Libraries People FAQ More Class invalid_config_file_syntax boost::program_options::invalid_config_file_syntax Synopsis..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/program_options/invalid_config_file_syntax.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/program_options/invalid_config_file_syntax.html"
+}
+item {
+  title: "Function template parse_config_file"
+  desc: " Function template parse_config_file Home Libraries People FAQ More Function template parse_config_file boost::program_options::parse_config_file Synopsis //..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/program_options/parse_config_f_idp45020640.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/program_options/parse_config_f_idp45020640.html"
+}
+item {
+  title: "Function template parse_config_file"
+  desc: " Function template parse_config_file Home Libraries People FAQ More Function template parse_config_file boost::program_options::parse_config_file Synopsis //..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/program_options/parse_config_f_idp67595728.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/program_options/parse_config_f_idp67595728.html"
+}
+item {
+  title: "Class reading_file"
+  desc: " Class reading_file Home Libraries People FAQ More Class reading_file boost::program_options::reading_file Synopsis // In header: &lt;boost/program_options/erro..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/program_options/reading_file.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/program_options/reading_file.html"
+}
+item {
+  title: "Stream-Oriented File Descriptors"
+  desc: " Stream-Oriented File Descriptors Home Libraries People FAQ More Stream-Oriented         File Descriptors           Boost.Asio includes classes added to perm..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/overview/posix/stream_descriptor.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/overview/posix/stream_descriptor.html"
+}
+item {
+  title: "ssl::context::file_format"
+  desc: " ssl::context::file_format Home Libraries People FAQ More ssl::context::file_format             File format types.          enum file_format                 ..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/file_format.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/file_format.html"
+}
+item {
+  title: "ssl::context::load_verify_file"
+  desc: " ssl::context::load_verify_file Home Libraries People FAQ More ssl::context::load_verify_file             Load a certification authority file for performing ..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/load_verify_file.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/load_verify_file.html"
+}
+item {
+  title: "ssl::context::use_certificate_chain_file"
+  desc: " ssl::context::use_certificate_chain_file Home Libraries People FAQ More ssl::context::use_certificate_chain_file             Use a certificate chain from a ..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_certificate_chain_file.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_certificate_chain_file.html"
+}
+item {
+  title: "ssl::context::use_certificate_file"
+  desc: " ssl::context::use_certificate_file Home Libraries People FAQ More ssl::context::use_certificate_file             Use a certificate from a file.          voi..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_certificate_file.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_certificate_file.html"
+}
+item {
+  title: "ssl::context::use_private_key_file"
+  desc: " ssl::context::use_private_key_file Home Libraries People FAQ More ssl::context::use_private_key_file             Use a private key from a file.          voi..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_private_key_file.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_private_key_file.html"
+}
+item {
+  title: "Function template file_time_to_microseconds"
+  desc: " Function template file_time_to_microseconds Home Libraries People FAQ More Function template file_time_to_microseconds boost::date_time::winapi::file_time_t..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/date_time/winapi/file_time_to_microseconds.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/date_time/winapi/file_time_to_microseconds.html"
+}
+item {
+  title: "buffer (20 of 28 overloads)"
+  desc: " buffer (20 of 28 overloads) Home Libraries People FAQ More buffer (20         of 28 overloads)           Create a new non-modifiable buffer that represents ..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/buffer/overload20.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/buffer/overload20.html"
+}
+item {
+  title: "ssl::context::load_verify_file (1 of 2 overloads)"
+  desc: " ssl::context::load_verify_file (1 of 2 overloads) Home Libraries People FAQ More ssl::context::load_verify_file           (1 of 2 overloads)             Loa..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/load_verify_file/overload1.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/load_verify_file/overload1.html"
+}
+item {
+  title: "ssl::context::load_verify_file (2 of 2 overloads)"
+  desc: " ssl::context::load_verify_file (2 of 2 overloads) Home Libraries People FAQ More ssl::context::load_verify_file           (2 of 2 overloads)             Loa..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/load_verify_file/overload2.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/load_verify_file/overload2.html"
+}
+item {
+  title: "ssl::context::use_certificate_chain_file (1 of 2 overloads)"
+  desc: " ssl::context::use_certificate_chain_file (1 of 2 overloads) Home Libraries People FAQ More ssl::context::use_certificate_chain_file           (1 of 2 overlo..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_certificate_chain_file/overload1.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_certificate_chain_file/overload1.html"
+}
+item {
+  title: "ssl::context::use_certificate_chain_file (2 of 2 overloads)"
+  desc: " ssl::context::use_certificate_chain_file (2 of 2 overloads) Home Libraries People FAQ More ssl::context::use_certificate_chain_file           (2 of 2 overlo..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_certificate_chain_file/overload2.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_certificate_chain_file/overload2.html"
+}
+item {
+  title: "ssl::context::use_certificate_file (1 of 2 overloads)"
+  desc: " ssl::context::use_certificate_file (1 of 2 overloads) Home Libraries People FAQ More ssl::context::use_certificate_file           (1 of 2 overloads)        ..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_certificate_file/overload1.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_certificate_file/overload1.html"
+}
+item {
+  title: "ssl::context::use_certificate_file (2 of 2 overloads)"
+  desc: " ssl::context::use_certificate_file (2 of 2 overloads) Home Libraries People FAQ More ssl::context::use_certificate_file           (2 of 2 overloads)        ..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_certificate_file/overload2.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_certificate_file/overload2.html"
+}
+item {
+  title: "ssl::context::use_private_key_file (1 of 2 overloads)"
+  desc: " ssl::context::use_private_key_file (1 of 2 overloads) Home Libraries People FAQ More ssl::context::use_private_key_file           (1 of 2 overloads)        ..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_private_key_file/overload1.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_private_key_file/overload1.html"
+}
+item {
+  title: "ssl::context::use_private_key_file (2 of 2 overloads)"
+  desc: " ssl::context::use_private_key_file (2 of 2 overloads) Home Libraries People FAQ More ssl::context::use_private_key_file           (2 of 2 overloads)        ..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_private_key_file/overload2.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_private_key_file/overload2.html"
+}
+item {
+  title: "ssl::context::use_rsa_private_key_file (1 of 2 overloads)"
+  desc: " ssl::context::use_rsa_private_key_file (1 of 2 overloads) Home Libraries People FAQ More ssl::context::use_rsa_private_key_file           (1 of 2 overloads)..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_rsa_private_key_file/overload1.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_rsa_private_key_file/overload1.html"
+}
+item {
+  title: "ssl::context::use_rsa_private_key_file (2 of 2 overloads)"
+  desc: " ssl::context::use_rsa_private_key_file (2 of 2 overloads) Home Libraries People FAQ More ssl::context::use_rsa_private_key_file           (2 of 2 overloads)..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_rsa_private_key_file/overload2.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_rsa_private_key_file/overload2.html"
+}
+item {
+  title: "ssl::context::use_tmp_dh_file (1 of 2 overloads)"
+  desc: " ssl::context::use_tmp_dh_file (1 of 2 overloads) Home Libraries People FAQ More ssl::context::use_tmp_dh_file           (1 of 2 overloads)             Use t..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_tmp_dh_file/overload1.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_tmp_dh_file/overload1.html"
+}
+item {
+  title: "ssl::context::use_tmp_dh_file (2 of 2 overloads)"
+  desc: " ssl::context::use_tmp_dh_file (2 of 2 overloads) Home Libraries People FAQ More ssl::context::use_tmp_dh_file           (2 of 2 overloads)             Use t..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_tmp_dh_file/overload2.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_tmp_dh_file/overload2.html"
+}
+item {
+  title: "ssl::context_base::file_format"
+  desc: " ssl::context_base::file_format Home Libraries People FAQ More ssl::context_base::file_format             File format types.          enum file_format       ..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context_base/file_format.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context_base/file_format.html"
+}
+item {
+  title: "ssl::context::use_rsa_private_key_file"
+  desc: " ssl::context::use_rsa_private_key_file Home Libraries People FAQ More ssl::context::use_rsa_private_key_file             Use an RSA private key from a file...."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_rsa_private_key_file.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_rsa_private_key_file.html"
+}
+item {
+  title: "buffer_copy (20 of 30 overloads)"
+  desc: " buffer_copy (20 of 30 overloads) Home Libraries People FAQ More buffer_copy         (20 of 30 overloads)           Copies a limited number of bytes from a s..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/buffer_copy/overload20.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/buffer_copy/overload20.html"
+}
+err_code: 0
+I0902 13:17:12.480939 82896 doc_searcher.cc:43] CutQuery Done! sid=0
+I0902 13:17:12.480975 82896 doc_searcher.cc:23] Retrieve Done!
+I0902 13:17:12.480983 82896 doc_searcher.cc:26] Rank Done!
+I0902 13:17:12.480990 82896 doc_searcher.cc:29] Retrieve Done!
+I0902 13:17:12.481019 82896 doc_searcher.cc:175] [Request]sid: 0
+timestamp: 1535865432
+query: "balanced+"
+I0902 13:17:12.481037 82896 doc_searcher.cc:176] [Response]sid: 0
+timestamp: 1535865432
+err_code: 0
+I0902 13:23:53.040215 82896 doc_searcher.cc:43] CutQuery Done! sid=0
+I0902 13:23:53.040777 82896 doc_searcher.cc:23] Retrieve Done!
+I0902 13:23:53.040825 82896 doc_searcher.cc:26] Rank Done!
+I0902 13:23:53.045181 82896 doc_searcher.cc:29] Retrieve Done!
+I0902 13:23:53.045248 82896 doc_searcher.cc:175] [Request]sid: 0
+timestamp: 1535865832
+query: "balanced+file"
+I0902 13:23:53.045586 82896 doc_searcher.cc:176] [Response]sid: 0
+timestamp: 1535865833
+item {
+  title: "Function template file_time_to_microseconds"
+  desc: " Function template file_time_to_microseconds Home Libraries People FAQ More Function template file_time_to_microseconds boost::date_time::winapi::file_time_t..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/date_time/winapi/file_time_to_microseconds.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/date_time/winapi/file_time_to_microseconds.html"
+}
+item {
+  title: "Class template basic_managed_mapped_file"
+  desc: " Class template basic_managed_mapped_file Home Libraries People FAQ More Class template basic_managed_mapped_file boost::interprocess::basic_managed_mapped_f..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/interprocess/basic_managed_mapped_file.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/interprocess/basic_managed_mapped_file.html"
+}
+item {
+  title: "Class file_lock"
+  desc: " Class file_lock Home Libraries People FAQ More Class file_lock boost::interprocess::file_lock Synopsis // In header: &lt;boost/interprocess/sync/file_lock.hpp&gt;..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/interprocess/file_lock.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/interprocess/file_lock.html"
+}
+item {
+  title: "Class file_mapping"
+  desc: " Class file_mapping Home Libraries People FAQ More Class file_mapping boost::interprocess::file_mapping Synopsis // In header: &lt;boost/interprocess/file_mappi..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/interprocess/file_mapping.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/interprocess/file_mapping.html"
+}
+item {
+  title: "Class remove_file_on_destroy"
+  desc: " Class remove_file_on_destroy Home Libraries People FAQ More Class remove_file_on_destroy boost::interprocess::remove_file_on_destroy Synopsis // In header: ..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/interprocess/remove_file_on_destroy.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/interprocess/remove_file_on_destroy.html"
+}
+item {
+  title: "Class invalid_config_file_syntax"
+  desc: " Class invalid_config_file_syntax Home Libraries People FAQ More Class invalid_config_file_syntax boost::program_options::invalid_config_file_syntax Synopsis..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/program_options/invalid_config_file_syntax.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/program_options/invalid_config_file_syntax.html"
+}
+item {
+  title: "Function template parse_config_file"
+  desc: " Function template parse_config_file Home Libraries People FAQ More Function template parse_config_file boost::program_options::parse_config_file Synopsis //..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/program_options/parse_config_f_idp45020640.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/program_options/parse_config_f_idp45020640.html"
+}
+item {
+  title: "Function template parse_config_file"
+  desc: " Function template parse_config_file Home Libraries People FAQ More Function template parse_config_file boost::program_options::parse_config_file Synopsis //..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/program_options/parse_config_f_idp67595728.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/program_options/parse_config_f_idp67595728.html"
+}
+item {
+  title: "Class reading_file"
+  desc: " Class reading_file Home Libraries People FAQ More Class reading_file boost::program_options::reading_file Synopsis // In header: &lt;boost/program_options/erro..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/program_options/reading_file.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/program_options/reading_file.html"
+}
+item {
+  title: "Stream-Oriented File Descriptors"
+  desc: " Stream-Oriented File Descriptors Home Libraries People FAQ More Stream-Oriented         File Descriptors           Boost.Asio includes classes added to perm..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/overview/posix/stream_descriptor.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/overview/posix/stream_descriptor.html"
+}
+item {
+  title: "ssl::context::file_format"
+  desc: " ssl::context::file_format Home Libraries People FAQ More ssl::context::file_format             File format types.          enum file_format                 ..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/file_format.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/file_format.html"
+}
+item {
+  title: "ssl::context::load_verify_file"
+  desc: " ssl::context::load_verify_file Home Libraries People FAQ More ssl::context::load_verify_file             Load a certification authority file for performing ..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/load_verify_file.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/load_verify_file.html"
+}
+item {
+  title: "ssl::context::use_certificate_chain_file"
+  desc: " ssl::context::use_certificate_chain_file Home Libraries People FAQ More ssl::context::use_certificate_chain_file             Use a certificate chain from a ..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_certificate_chain_file.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_certificate_chain_file.html"
+}
+item {
+  title: "ssl::context::use_certificate_file"
+  desc: " ssl::context::use_certificate_file Home Libraries People FAQ More ssl::context::use_certificate_file             Use a certificate from a file.          voi..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_certificate_file.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_certificate_file.html"
+}
+item {
+  title: "ssl::context::use_private_key_file"
+  desc: " ssl::context::use_private_key_file Home Libraries People FAQ More ssl::context::use_private_key_file             Use a private key from a file.          voi..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_private_key_file.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_private_key_file.html"
+}
+item {
+  title: "ssl::context::use_rsa_private_key_file"
+  desc: " ssl::context::use_rsa_private_key_file Home Libraries People FAQ More ssl::context::use_rsa_private_key_file             Use an RSA private key from a file...."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_rsa_private_key_file.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_rsa_private_key_file.html"
+}
+item {
+  title: "ssl::context::use_tmp_dh_file"
+  desc: " ssl::context::use_tmp_dh_file Home Libraries People FAQ More ssl::context::use_tmp_dh_file             Use the specified file to obtain the temporary       ..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_tmp_dh_file.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_tmp_dh_file.html"
+}
+item {
+  title: "ssl::context::load_verify_file (1 of 2 overloads)"
+  desc: " ssl::context::load_verify_file (1 of 2 overloads) Home Libraries People FAQ More ssl::context::load_verify_file           (1 of 2 overloads)             Loa..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/load_verify_file/overload1.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/load_verify_file/overload1.html"
+}
+item {
+  title: "ssl::context::load_verify_file (2 of 2 overloads)"
+  desc: " ssl::context::load_verify_file (2 of 2 overloads) Home Libraries People FAQ More ssl::context::load_verify_file           (2 of 2 overloads)             Loa..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/load_verify_file/overload2.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/load_verify_file/overload2.html"
+}
+item {
+  title: "ssl::context::use_certificate_chain_file (1 of 2 overloads)"
+  desc: " ssl::context::use_certificate_chain_file (1 of 2 overloads) Home Libraries People FAQ More ssl::context::use_certificate_chain_file           (1 of 2 overlo..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_certificate_chain_file/overload1.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_certificate_chain_file/overload1.html"
+}
+item {
+  title: "ssl::context::use_certificate_chain_file (2 of 2 overloads)"
+  desc: " ssl::context::use_certificate_chain_file (2 of 2 overloads) Home Libraries People FAQ More ssl::context::use_certificate_chain_file           (2 of 2 overlo..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_certificate_chain_file/overload2.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_certificate_chain_file/overload2.html"
+}
+item {
+  title: "ssl::context::use_certificate_file (1 of 2 overloads)"
+  desc: " ssl::context::use_certificate_file (1 of 2 overloads) Home Libraries People FAQ More ssl::context::use_certificate_file           (1 of 2 overloads)        ..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_certificate_file/overload1.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_certificate_file/overload1.html"
+}
+item {
+  title: "ssl::context::use_certificate_file (2 of 2 overloads)"
+  desc: " ssl::context::use_certificate_file (2 of 2 overloads) Home Libraries People FAQ More ssl::context::use_certificate_file           (2 of 2 overloads)        ..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_certificate_file/overload2.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_certificate_file/overload2.html"
+}
+item {
+  title: "ssl::context::use_private_key_file (1 of 2 overloads)"
+  desc: " ssl::context::use_private_key_file (1 of 2 overloads) Home Libraries People FAQ More ssl::context::use_private_key_file           (1 of 2 overloads)        ..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_private_key_file/overload1.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_private_key_file/overload1.html"
+}
+item {
+  title: "ssl::context::use_private_key_file (2 of 2 overloads)"
+  desc: " ssl::context::use_private_key_file (2 of 2 overloads) Home Libraries People FAQ More ssl::context::use_private_key_file           (2 of 2 overloads)        ..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_private_key_file/overload2.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_private_key_file/overload2.html"
+}
+item {
+  title: "ssl::context::use_rsa_private_key_file (1 of 2 overloads)"
+  desc: " ssl::context::use_rsa_private_key_file (1 of 2 overloads) Home Libraries People FAQ More ssl::context::use_rsa_private_key_file           (1 of 2 overloads)..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_rsa_private_key_file/overload1.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_rsa_private_key_file/overload1.html"
+}
+item {
+  title: "ssl::context::use_rsa_private_key_file (2 of 2 overloads)"
+  desc: " ssl::context::use_rsa_private_key_file (2 of 2 overloads) Home Libraries People FAQ More ssl::context::use_rsa_private_key_file           (2 of 2 overloads)..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_rsa_private_key_file/overload2.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_rsa_private_key_file/overload2.html"
+}
+item {
+  title: "ssl::context::use_tmp_dh_file (1 of 2 overloads)"
+  desc: " ssl::context::use_tmp_dh_file (1 of 2 overloads) Home Libraries People FAQ More ssl::context::use_tmp_dh_file           (1 of 2 overloads)             Use t..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_tmp_dh_file/overload1.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_tmp_dh_file/overload1.html"
+}
+item {
+  title: "ssl::context::use_tmp_dh_file (2 of 2 overloads)"
+  desc: " ssl::context::use_tmp_dh_file (2 of 2 overloads) Home Libraries People FAQ More ssl::context::use_tmp_dh_file           (2 of 2 overloads)             Use t..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_tmp_dh_file/overload2.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_tmp_dh_file/overload2.html"
+}
+item {
+  title: "ssl::context_base::file_format"
+  desc: " ssl::context_base::file_format Home Libraries People FAQ More ssl::context_base::file_format             File format types.          enum file_format       ..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context_base/file_format.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context_base/file_format.html"
+}
+err_code: 0
+I0902 13:26:12.392069 82896 doc_searcher.cc:43] CutQuery Done! sid=0
+I0902 13:26:12.407374 82896 doc_searcher.cc:23] Retrieve Done!
+I0902 13:26:12.407431 82896 doc_searcher.cc:26] Rank Done!
+I0902 13:26:12.411733 82896 doc_searcher.cc:29] Retrieve Done!
+I0902 13:26:12.411856 82896 doc_searcher.cc:175] [Request]sid: 0
+timestamp: 1535865972
+query: "balanced+file"
+I0902 13:26:12.412297 82896 doc_searcher.cc:176] [Response]sid: 0
+timestamp: 1535865972
+item {
+  title: "Function template file_time_to_microseconds"
+  desc: " Function template file_time_to_microseconds Home Libraries People FAQ More Function template file_time_to_microseconds boost::date_time::winapi::file_time_t..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/date_time/winapi/file_time_to_microseconds.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/date_time/winapi/file_time_to_microseconds.html"
+}
+item {
+  title: "Class template basic_managed_mapped_file"
+  desc: " Class template basic_managed_mapped_file Home Libraries People FAQ More Class template basic_managed_mapped_file boost::interprocess::basic_managed_mapped_f..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/interprocess/basic_managed_mapped_file.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/interprocess/basic_managed_mapped_file.html"
+}
+item {
+  title: "Class file_lock"
+  desc: " Class file_lock Home Libraries People FAQ More Class file_lock boost::interprocess::file_lock Synopsis // In header: &lt;boost/interprocess/sync/file_lock.hpp&gt;..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/interprocess/file_lock.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/interprocess/file_lock.html"
+}
+item {
+  title: "Class file_mapping"
+  desc: " Class file_mapping Home Libraries People FAQ More Class file_mapping boost::interprocess::file_mapping Synopsis // In header: &lt;boost/interprocess/file_mappi..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/interprocess/file_mapping.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/interprocess/file_mapping.html"
+}
+item {
+  title: "Class remove_file_on_destroy"
+  desc: " Class remove_file_on_destroy Home Libraries People FAQ More Class remove_file_on_destroy boost::interprocess::remove_file_on_destroy Synopsis // In header: ..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/interprocess/remove_file_on_destroy.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/interprocess/remove_file_on_destroy.html"
+}
+item {
+  title: "Class invalid_config_file_syntax"
+  desc: " Class invalid_config_file_syntax Home Libraries People FAQ More Class invalid_config_file_syntax boost::program_options::invalid_config_file_syntax Synopsis..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/program_options/invalid_config_file_syntax.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/program_options/invalid_config_file_syntax.html"
+}
+item {
+  title: "Function template parse_config_file"
+  desc: " Function template parse_config_file Home Libraries People FAQ More Function template parse_config_file boost::program_options::parse_config_file Synopsis //..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/program_options/parse_config_f_idp45020640.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/program_options/parse_config_f_idp45020640.html"
+}
+item {
+  title: "Function template parse_config_file"
+  desc: " Function template parse_config_file Home Libraries People FAQ More Function template parse_config_file boost::program_options::parse_config_file Synopsis //..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/program_options/parse_config_f_idp67595728.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/program_options/parse_config_f_idp67595728.html"
+}
+item {
+  title: "Class reading_file"
+  desc: " Class reading_file Home Libraries People FAQ More Class reading_file boost::program_options::reading_file Synopsis // In header: &lt;boost/program_options/erro..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/program_options/reading_file.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/program_options/reading_file.html"
+}
+item {
+  title: "Stream-Oriented File Descriptors"
+  desc: " Stream-Oriented File Descriptors Home Libraries People FAQ More Stream-Oriented         File Descriptors           Boost.Asio includes classes added to perm..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/overview/posix/stream_descriptor.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/overview/posix/stream_descriptor.html"
+}
+item {
+  title: "ssl::context::file_format"
+  desc: " ssl::context::file_format Home Libraries People FAQ More ssl::context::file_format             File format types.          enum file_format                 ..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/file_format.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/file_format.html"
+}
+item {
+  title: "ssl::context::load_verify_file"
+  desc: " ssl::context::load_verify_file Home Libraries People FAQ More ssl::context::load_verify_file             Load a certification authority file for performing ..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/load_verify_file.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/load_verify_file.html"
+}
+item {
+  title: "ssl::context::use_certificate_chain_file"
+  desc: " ssl::context::use_certificate_chain_file Home Libraries People FAQ More ssl::context::use_certificate_chain_file             Use a certificate chain from a ..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_certificate_chain_file.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_certificate_chain_file.html"
+}
+item {
+  title: "ssl::context::use_certificate_file"
+  desc: " ssl::context::use_certificate_file Home Libraries People FAQ More ssl::context::use_certificate_file             Use a certificate from a file.          voi..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_certificate_file.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_certificate_file.html"
+}
+item {
+  title: "ssl::context::use_private_key_file"
+  desc: " ssl::context::use_private_key_file Home Libraries People FAQ More ssl::context::use_private_key_file             Use a private key from a file.          voi..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_private_key_file.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_private_key_file.html"
+}
+item {
+  title: "ssl::context::use_rsa_private_key_file"
+  desc: " ssl::context::use_rsa_private_key_file Home Libraries People FAQ More ssl::context::use_rsa_private_key_file             Use an RSA private key from a file...."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_rsa_private_key_file.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_rsa_private_key_file.html"
+}
+item {
+  title: "ssl::context::use_tmp_dh_file"
+  desc: " ssl::context::use_tmp_dh_file Home Libraries People FAQ More ssl::context::use_tmp_dh_file             Use the specified file to obtain the temporary       ..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_tmp_dh_file.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_tmp_dh_file.html"
+}
+item {
+  title: "ssl::context::load_verify_file (1 of 2 overloads)"
+  desc: " ssl::context::load_verify_file (1 of 2 overloads) Home Libraries People FAQ More ssl::context::load_verify_file           (1 of 2 overloads)             Loa..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/load_verify_file/overload1.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/load_verify_file/overload1.html"
+}
+item {
+  title: "ssl::context::load_verify_file (2 of 2 overloads)"
+  desc: " ssl::context::load_verify_file (2 of 2 overloads) Home Libraries People FAQ More ssl::context::load_verify_file           (2 of 2 overloads)             Loa..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/load_verify_file/overload2.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/load_verify_file/overload2.html"
+}
+item {
+  title: "ssl::context::use_certificate_chain_file (1 of 2 overloads)"
+  desc: " ssl::context::use_certificate_chain_file (1 of 2 overloads) Home Libraries People FAQ More ssl::context::use_certificate_chain_file           (1 of 2 overlo..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_certificate_chain_file/overload1.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_certificate_chain_file/overload1.html"
+}
+item {
+  title: "ssl::context::use_certificate_chain_file (2 of 2 overloads)"
+  desc: " ssl::context::use_certificate_chain_file (2 of 2 overloads) Home Libraries People FAQ More ssl::context::use_certificate_chain_file           (2 of 2 overlo..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_certificate_chain_file/overload2.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_certificate_chain_file/overload2.html"
+}
+item {
+  title: "ssl::context::use_certificate_file (1 of 2 overloads)"
+  desc: " ssl::context::use_certificate_file (1 of 2 overloads) Home Libraries People FAQ More ssl::context::use_certificate_file           (1 of 2 overloads)        ..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_certificate_file/overload1.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_certificate_file/overload1.html"
+}
+item {
+  title: "ssl::context::use_certificate_file (2 of 2 overloads)"
+  desc: " ssl::context::use_certificate_file (2 of 2 overloads) Home Libraries People FAQ More ssl::context::use_certificate_file           (2 of 2 overloads)        ..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_certificate_file/overload2.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_certificate_file/overload2.html"
+}
+item {
+  title: "ssl::context::use_private_key_file (1 of 2 overloads)"
+  desc: " ssl::context::use_private_key_file (1 of 2 overloads) Home Libraries People FAQ More ssl::context::use_private_key_file           (1 of 2 overloads)        ..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_private_key_file/overload1.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_private_key_file/overload1.html"
+}
+item {
+  title: "ssl::context::use_private_key_file (2 of 2 overloads)"
+  desc: " ssl::context::use_private_key_file (2 of 2 overloads) Home Libraries People FAQ More ssl::context::use_private_key_file           (2 of 2 overloads)        ..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_private_key_file/overload2.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_private_key_file/overload2.html"
+}
+item {
+  title: "ssl::context::use_rsa_private_key_file (1 of 2 overloads)"
+  desc: " ssl::context::use_rsa_private_key_file (1 of 2 overloads) Home Libraries People FAQ More ssl::context::use_rsa_private_key_file           (1 of 2 overloads)..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_rsa_private_key_file/overload1.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_rsa_private_key_file/overload1.html"
+}
+item {
+  title: "ssl::context::use_rsa_private_key_file (2 of 2 overloads)"
+  desc: " ssl::context::use_rsa_private_key_file (2 of 2 overloads) Home Libraries People FAQ More ssl::context::use_rsa_private_key_file           (2 of 2 overloads)..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_rsa_private_key_file/overload2.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_rsa_private_key_file/overload2.html"
+}
+item {
+  title: "ssl::context::use_tmp_dh_file (1 of 2 overloads)"
+  desc: " ssl::context::use_tmp_dh_file (1 of 2 overloads) Home Libraries People FAQ More ssl::context::use_tmp_dh_file           (1 of 2 overloads)             Use t..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_tmp_dh_file/overload1.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_tmp_dh_file/overload1.html"
+}
+item {
+  title: "ssl::context::use_tmp_dh_file (2 of 2 overloads)"
+  desc: " ssl::context::use_tmp_dh_file (2 of 2 overloads) Home Libraries People FAQ More ssl::context::use_tmp_dh_file           (2 of 2 overloads)             Use t..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_tmp_dh_file/overload2.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_tmp_dh_file/overload2.html"
+}
+item {
+  title: "ssl::context_base::file_format"
+  desc: " ssl::context_base::file_format Home Libraries People FAQ More ssl::context_base::file_format             File format types.          enum file_format       ..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context_base/file_format.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context_base/file_format.html"
+}
+err_code: 0
+I0902 13:27:40.299640 82898 doc_searcher.cc:43] CutQuery Done! sid=0
+I0902 13:27:40.299700 82898 doc_searcher.cc:23] Retrieve Done!
+I0902 13:27:40.299708 82898 doc_searcher.cc:26] Rank Done!
+I0902 13:27:40.300796 82898 doc_searcher.cc:29] Retrieve Done!
+I0902 13:27:40.300817 82898 doc_searcher.cc:175] [Request]sid: 0
+timestamp: 1535866059
+query: "balanced+file"
+I0902 13:27:40.301077 82898 doc_searcher.cc:176] [Response]sid: 0
+timestamp: 1535866060
+item {
+  title: "Function template file_time_to_microseconds"
+  desc: " Function template file_time_to_microseconds Home Libraries People FAQ More Function template file_time_to_microseconds boost::date_time::winapi::file_time_t..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/date_time/winapi/file_time_to_microseconds.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/date_time/winapi/file_time_to_microseconds.html"
+}
+item {
+  title: "Class template basic_managed_mapped_file"
+  desc: " Class template basic_managed_mapped_file Home Libraries People FAQ More Class template basic_managed_mapped_file boost::interprocess::basic_managed_mapped_f..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/interprocess/basic_managed_mapped_file.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/interprocess/basic_managed_mapped_file.html"
+}
+item {
+  title: "Class file_lock"
+  desc: " Class file_lock Home Libraries People FAQ More Class file_lock boost::interprocess::file_lock Synopsis // In header: &lt;boost/interprocess/sync/file_lock.hpp&gt;..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/interprocess/file_lock.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/interprocess/file_lock.html"
+}
+item {
+  title: "Class file_mapping"
+  desc: " Class file_mapping Home Libraries People FAQ More Class file_mapping boost::interprocess::file_mapping Synopsis // In header: &lt;boost/interprocess/file_mappi..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/interprocess/file_mapping.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/interprocess/file_mapping.html"
+}
+item {
+  title: "Class remove_file_on_destroy"
+  desc: " Class remove_file_on_destroy Home Libraries People FAQ More Class remove_file_on_destroy boost::interprocess::remove_file_on_destroy Synopsis // In header: ..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/interprocess/remove_file_on_destroy.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/interprocess/remove_file_on_destroy.html"
+}
+item {
+  title: "Class invalid_config_file_syntax"
+  desc: " Class invalid_config_file_syntax Home Libraries People FAQ More Class invalid_config_file_syntax boost::program_options::invalid_config_file_syntax Synopsis..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/program_options/invalid_config_file_syntax.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/program_options/invalid_config_file_syntax.html"
+}
+item {
+  title: "Function template parse_config_file"
+  desc: " Function template parse_config_file Home Libraries People FAQ More Function template parse_config_file boost::program_options::parse_config_file Synopsis //..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/program_options/parse_config_f_idp45020640.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/program_options/parse_config_f_idp45020640.html"
+}
+item {
+  title: "Function template parse_config_file"
+  desc: " Function template parse_config_file Home Libraries People FAQ More Function template parse_config_file boost::program_options::parse_config_file Synopsis //..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/program_options/parse_config_f_idp67595728.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/program_options/parse_config_f_idp67595728.html"
+}
+item {
+  title: "Class reading_file"
+  desc: " Class reading_file Home Libraries People FAQ More Class reading_file boost::program_options::reading_file Synopsis // In header: &lt;boost/program_options/erro..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/program_options/reading_file.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/program_options/reading_file.html"
+}
+item {
+  title: "Stream-Oriented File Descriptors"
+  desc: " Stream-Oriented File Descriptors Home Libraries People FAQ More Stream-Oriented         File Descriptors           Boost.Asio includes classes added to perm..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/overview/posix/stream_descriptor.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/overview/posix/stream_descriptor.html"
+}
+item {
+  title: "ssl::context::file_format"
+  desc: " ssl::context::file_format Home Libraries People FAQ More ssl::context::file_format             File format types.          enum file_format                 ..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/file_format.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/file_format.html"
+}
+item {
+  title: "ssl::context::load_verify_file"
+  desc: " ssl::context::load_verify_file Home Libraries People FAQ More ssl::context::load_verify_file             Load a certification authority file for performing ..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/load_verify_file.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/load_verify_file.html"
+}
+item {
+  title: "ssl::context::use_certificate_chain_file"
+  desc: " ssl::context::use_certificate_chain_file Home Libraries People FAQ More ssl::context::use_certificate_chain_file             Use a certificate chain from a ..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_certificate_chain_file.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_certificate_chain_file.html"
+}
+item {
+  title: "ssl::context::use_certificate_file"
+  desc: " ssl::context::use_certificate_file Home Libraries People FAQ More ssl::context::use_certificate_file             Use a certificate from a file.          voi..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_certificate_file.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_certificate_file.html"
+}
+item {
+  title: "ssl::context::use_private_key_file"
+  desc: " ssl::context::use_private_key_file Home Libraries People FAQ More ssl::context::use_private_key_file             Use a private key from a file.          voi..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_private_key_file.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_private_key_file.html"
+}
+item {
+  title: "ssl::context::use_rsa_private_key_file"
+  desc: " ssl::context::use_rsa_private_key_file Home Libraries People FAQ More ssl::context::use_rsa_private_key_file             Use an RSA private key from a file...."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_rsa_private_key_file.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_rsa_private_key_file.html"
+}
+item {
+  title: "ssl::context::use_tmp_dh_file"
+  desc: " ssl::context::use_tmp_dh_file Home Libraries People FAQ More ssl::context::use_tmp_dh_file             Use the specified file to obtain the temporary       ..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_tmp_dh_file.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_tmp_dh_file.html"
+}
+item {
+  title: "ssl::context::load_verify_file (1 of 2 overloads)"
+  desc: " ssl::context::load_verify_file (1 of 2 overloads) Home Libraries People FAQ More ssl::context::load_verify_file           (1 of 2 overloads)             Loa..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/load_verify_file/overload1.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/load_verify_file/overload1.html"
+}
+item {
+  title: "ssl::context::load_verify_file (2 of 2 overloads)"
+  desc: " ssl::context::load_verify_file (2 of 2 overloads) Home Libraries People FAQ More ssl::context::load_verify_file           (2 of 2 overloads)             Loa..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/load_verify_file/overload2.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/load_verify_file/overload2.html"
+}
+item {
+  title: "ssl::context::use_certificate_chain_file (1 of 2 overloads)"
+  desc: " ssl::context::use_certificate_chain_file (1 of 2 overloads) Home Libraries People FAQ More ssl::context::use_certificate_chain_file           (1 of 2 overlo..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_certificate_chain_file/overload1.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_certificate_chain_file/overload1.html"
+}
+item {
+  title: "ssl::context::use_certificate_chain_file (2 of 2 overloads)"
+  desc: " ssl::context::use_certificate_chain_file (2 of 2 overloads) Home Libraries People FAQ More ssl::context::use_certificate_chain_file           (2 of 2 overlo..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_certificate_chain_file/overload2.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_certificate_chain_file/overload2.html"
+}
+item {
+  title: "ssl::context::use_certificate_file (1 of 2 overloads)"
+  desc: " ssl::context::use_certificate_file (1 of 2 overloads) Home Libraries People FAQ More ssl::context::use_certificate_file           (1 of 2 overloads)        ..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_certificate_file/overload1.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_certificate_file/overload1.html"
+}
+item {
+  title: "ssl::context::use_certificate_file (2 of 2 overloads)"
+  desc: " ssl::context::use_certificate_file (2 of 2 overloads) Home Libraries People FAQ More ssl::context::use_certificate_file           (2 of 2 overloads)        ..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_certificate_file/overload2.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_certificate_file/overload2.html"
+}
+item {
+  title: "ssl::context::use_private_key_file (1 of 2 overloads)"
+  desc: " ssl::context::use_private_key_file (1 of 2 overloads) Home Libraries People FAQ More ssl::context::use_private_key_file           (1 of 2 overloads)        ..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_private_key_file/overload1.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_private_key_file/overload1.html"
+}
+item {
+  title: "ssl::context::use_private_key_file (2 of 2 overloads)"
+  desc: " ssl::context::use_private_key_file (2 of 2 overloads) Home Libraries People FAQ More ssl::context::use_private_key_file           (2 of 2 overloads)        ..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_private_key_file/overload2.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_private_key_file/overload2.html"
+}
+item {
+  title: "ssl::context::use_rsa_private_key_file (1 of 2 overloads)"
+  desc: " ssl::context::use_rsa_private_key_file (1 of 2 overloads) Home Libraries People FAQ More ssl::context::use_rsa_private_key_file           (1 of 2 overloads)..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_rsa_private_key_file/overload1.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_rsa_private_key_file/overload1.html"
+}
+item {
+  title: "ssl::context::use_rsa_private_key_file (2 of 2 overloads)"
+  desc: " ssl::context::use_rsa_private_key_file (2 of 2 overloads) Home Libraries People FAQ More ssl::context::use_rsa_private_key_file           (2 of 2 overloads)..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_rsa_private_key_file/overload2.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_rsa_private_key_file/overload2.html"
+}
+item {
+  title: "ssl::context::use_tmp_dh_file (1 of 2 overloads)"
+  desc: " ssl::context::use_tmp_dh_file (1 of 2 overloads) Home Libraries People FAQ More ssl::context::use_tmp_dh_file           (1 of 2 overloads)             Use t..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_tmp_dh_file/overload1.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_tmp_dh_file/overload1.html"
+}
+item {
+  title: "ssl::context::use_tmp_dh_file (2 of 2 overloads)"
+  desc: " ssl::context::use_tmp_dh_file (2 of 2 overloads) Home Libraries People FAQ More ssl::context::use_tmp_dh_file           (2 of 2 overloads)             Use t..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_tmp_dh_file/overload2.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_tmp_dh_file/overload2.html"
+}
+item {
+  title: "ssl::context_base::file_format"
+  desc: " ssl::context_base::file_format Home Libraries People FAQ More ssl::context_base::file_format             File format types.          enum file_format       ..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context_base/file_format.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context_base/file_format.html"
+}
+err_code: 0
+I0902 13:29:23.081663 82898 doc_searcher.cc:43] CutQuery Done! sid=0
+I0902 13:29:23.081919 82898 doc_searcher.cc:23] Retrieve Done!
+I0902 13:29:23.081934 82898 doc_searcher.cc:26] Rank Done!
+I0902 13:29:23.083716 82898 doc_searcher.cc:29] Retrieve Done!
+I0902 13:29:23.083740 82898 doc_searcher.cc:175] [Request]sid: 0
+timestamp: 1535866162
+query: "balanced+file"
+I0902 13:29:23.083956 82898 doc_searcher.cc:176] [Response]sid: 0
+timestamp: 1535866163
+item {
+  title: "Function template file_time_to_microseconds"
+  desc: " Function template file_time_to_microseconds Home Libraries People FAQ More Function template file_time_to_microseconds boost::date_time::winapi::file_time_t..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/date_time/winapi/file_time_to_microseconds.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/date_time/winapi/file_time_to_microseconds.html"
+}
+item {
+  title: "Class template basic_managed_mapped_file"
+  desc: " Class template basic_managed_mapped_file Home Libraries People FAQ More Class template basic_managed_mapped_file boost::interprocess::basic_managed_mapped_f..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/interprocess/basic_managed_mapped_file.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/interprocess/basic_managed_mapped_file.html"
+}
+item {
+  title: "Class file_lock"
+  desc: " Class file_lock Home Libraries People FAQ More Class file_lock boost::interprocess::file_lock Synopsis // In header: &lt;boost/interprocess/sync/file_lock.hpp&gt;..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/interprocess/file_lock.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/interprocess/file_lock.html"
+}
+item {
+  title: "Class file_mapping"
+  desc: " Class file_mapping Home Libraries People FAQ More Class file_mapping boost::interprocess::file_mapping Synopsis // In header: &lt;boost/interprocess/file_mappi..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/interprocess/file_mapping.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/interprocess/file_mapping.html"
+}
+item {
+  title: "Class remove_file_on_destroy"
+  desc: " Class remove_file_on_destroy Home Libraries People FAQ More Class remove_file_on_destroy boost::interprocess::remove_file_on_destroy Synopsis // In header: ..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/interprocess/remove_file_on_destroy.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/interprocess/remove_file_on_destroy.html"
+}
+item {
+  title: "Class invalid_config_file_syntax"
+  desc: " Class invalid_config_file_syntax Home Libraries People FAQ More Class invalid_config_file_syntax boost::program_options::invalid_config_file_syntax Synopsis..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/program_options/invalid_config_file_syntax.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/program_options/invalid_config_file_syntax.html"
+}
+item {
+  title: "Function template parse_config_file"
+  desc: " Function template parse_config_file Home Libraries People FAQ More Function template parse_config_file boost::program_options::parse_config_file Synopsis //..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/program_options/parse_config_f_idp45020640.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/program_options/parse_config_f_idp45020640.html"
+}
+item {
+  title: "Function template parse_config_file"
+  desc: " Function template parse_config_file Home Libraries People FAQ More Function template parse_config_file boost::program_options::parse_config_file Synopsis //..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/program_options/parse_config_f_idp67595728.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/program_options/parse_config_f_idp67595728.html"
+}
+item {
+  title: "Class reading_file"
+  desc: " Class reading_file Home Libraries People FAQ More Class reading_file boost::program_options::reading_file Synopsis // In header: &lt;boost/program_options/erro..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/program_options/reading_file.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost/program_options/reading_file.html"
+}
+item {
+  title: "Stream-Oriented File Descriptors"
+  desc: " Stream-Oriented File Descriptors Home Libraries People FAQ More Stream-Oriented         File Descriptors           Boost.Asio includes classes added to perm..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/overview/posix/stream_descriptor.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/overview/posix/stream_descriptor.html"
+}
+item {
+  title: "ssl::context::file_format"
+  desc: " ssl::context::file_format Home Libraries People FAQ More ssl::context::file_format             File format types.          enum file_format                 ..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/file_format.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/file_format.html"
+}
+item {
+  title: "ssl::context::load_verify_file"
+  desc: " ssl::context::load_verify_file Home Libraries People FAQ More ssl::context::load_verify_file             Load a certification authority file for performing ..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/load_verify_file.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/load_verify_file.html"
+}
+item {
+  title: "ssl::context::use_certificate_chain_file"
+  desc: " ssl::context::use_certificate_chain_file Home Libraries People FAQ More ssl::context::use_certificate_chain_file             Use a certificate chain from a ..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_certificate_chain_file.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_certificate_chain_file.html"
+}
+item {
+  title: "ssl::context::use_certificate_file"
+  desc: " ssl::context::use_certificate_file Home Libraries People FAQ More ssl::context::use_certificate_file             Use a certificate from a file.          voi..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_certificate_file.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_certificate_file.html"
+}
+item {
+  title: "ssl::context::use_private_key_file"
+  desc: " ssl::context::use_private_key_file Home Libraries People FAQ More ssl::context::use_private_key_file             Use a private key from a file.          voi..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_private_key_file.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_private_key_file.html"
+}
+item {
+  title: "ssl::context::use_rsa_private_key_file"
+  desc: " ssl::context::use_rsa_private_key_file Home Libraries People FAQ More ssl::context::use_rsa_private_key_file             Use an RSA private key from a file...."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_rsa_private_key_file.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_rsa_private_key_file.html"
+}
+item {
+  title: "ssl::context::use_tmp_dh_file"
+  desc: " ssl::context::use_tmp_dh_file Home Libraries People FAQ More ssl::context::use_tmp_dh_file             Use the specified file to obtain the temporary       ..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_tmp_dh_file.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_tmp_dh_file.html"
+}
+item {
+  title: "ssl::context::load_verify_file (1 of 2 overloads)"
+  desc: " ssl::context::load_verify_file (1 of 2 overloads) Home Libraries People FAQ More ssl::context::load_verify_file           (1 of 2 overloads)             Loa..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/load_verify_file/overload1.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/load_verify_file/overload1.html"
+}
+item {
+  title: "ssl::context::load_verify_file (2 of 2 overloads)"
+  desc: " ssl::context::load_verify_file (2 of 2 overloads) Home Libraries People FAQ More ssl::context::load_verify_file           (2 of 2 overloads)             Loa..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/load_verify_file/overload2.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/load_verify_file/overload2.html"
+}
+item {
+  title: "ssl::context::use_certificate_chain_file (1 of 2 overloads)"
+  desc: " ssl::context::use_certificate_chain_file (1 of 2 overloads) Home Libraries People FAQ More ssl::context::use_certificate_chain_file           (1 of 2 overlo..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_certificate_chain_file/overload1.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_certificate_chain_file/overload1.html"
+}
+item {
+  title: "ssl::context::use_certificate_chain_file (2 of 2 overloads)"
+  desc: " ssl::context::use_certificate_chain_file (2 of 2 overloads) Home Libraries People FAQ More ssl::context::use_certificate_chain_file           (2 of 2 overlo..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_certificate_chain_file/overload2.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_certificate_chain_file/overload2.html"
+}
+item {
+  title: "ssl::context::use_certificate_file (1 of 2 overloads)"
+  desc: " ssl::context::use_certificate_file (1 of 2 overloads) Home Libraries People FAQ More ssl::context::use_certificate_file           (1 of 2 overloads)        ..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_certificate_file/overload1.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_certificate_file/overload1.html"
+}
+item {
+  title: "ssl::context::use_certificate_file (2 of 2 overloads)"
+  desc: " ssl::context::use_certificate_file (2 of 2 overloads) Home Libraries People FAQ More ssl::context::use_certificate_file           (2 of 2 overloads)        ..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_certificate_file/overload2.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_certificate_file/overload2.html"
+}
+item {
+  title: "ssl::context::use_private_key_file (1 of 2 overloads)"
+  desc: " ssl::context::use_private_key_file (1 of 2 overloads) Home Libraries People FAQ More ssl::context::use_private_key_file           (1 of 2 overloads)        ..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_private_key_file/overload1.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_private_key_file/overload1.html"
+}
+item {
+  title: "ssl::context::use_private_key_file (2 of 2 overloads)"
+  desc: " ssl::context::use_private_key_file (2 of 2 overloads) Home Libraries People FAQ More ssl::context::use_private_key_file           (2 of 2 overloads)        ..."
+  show_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_private_key_file/overload2.html"
+  jump_url: "https://www.boost.org/doc/libs/1_53_0/doc/html/boost_asio/reference/ssl__context/use_private_key_file/overload2.html"
+}
+item {
+  title: "ssl::context::use_rsa_private_key_file (1 of 2 overloads)"
+  desc: " ssl::context::use_rsa_private_key_file (1 of 2 overloads) Home Libraries People FAQ More ssl::context::us

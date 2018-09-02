@@ -1,5 +1,6 @@
-#include <base/base.h>
 #include <sofa/pbrpc/pbrpc.h>
+#include <glog/logging.h>
+#include <gflags/gflags.h>
 #include <ctemplate/template.h>
 #include "../../common/util.hpp"
 #include "server.pb.h"
@@ -7,7 +8,7 @@
 
 
 DEFINE_string(server_addr, "127.0.0.1:10000","请求的搜索服务器的地址");
-DEFINE_string(template_path,"../template/search_page.html","模板文件的路径");
+DEFINE_string(template_path,"wwwroot/template/search_page.html","模板文件的路径");
 
 namespace doc_client
 {
@@ -35,6 +36,7 @@ int GetQueryString(char output[])
             fprintf(stderr, "QUERY_STRING failed\n");
             return -1;
         }
+        //fprintf(stderr, "CGI query = %s\n", query_string);
         strcpy(output, query_string);
     } 
     else 
@@ -117,6 +119,8 @@ void ParseResponse(const Response& resp)
         table_dict->SetValue("desc", resp.item(i).desc());
         table_dict->SetValue("jump_url", resp.item(i).jump_url());
         table_dict->SetValue("show_url", resp.item(i).show_url());
+        //fprintf(stderr, "title = %s\n, jump_url = %s\n", resp.item(i).title().c_str(), resp.item(i).jump_url().c_str());
+        //std::cout << resp.item(i).title();
     }
 
     // 把模板文件加载起来
@@ -124,6 +128,7 @@ void ParseResponse(const Response& resp)
     // 对模板进行替换
     std::string html;
     tpl->Expand(&html, &dict);
+    //fprintf(stderr, "%s\n", html.c_str());
     std::cout << html;
     return;
 }
@@ -135,14 +140,21 @@ void CallServer()
     Request req;
     Response resp;
     PackageRequest(&req);
+    fprintf(stderr, "PackageRequest Over!!!\n");
     //2. 调用本地Search函数，本地远程调用
     //   服务器端的，获取到响应并解析响应
     Search(req, &resp);
+    fprintf(stderr, "Search Over!!!\n");
 
     //3. 解析响应并输出结果，由于这个客户端
     //   就是cgi程序，这里输出就相当于经过http
     //   服务器返回给浏览器
     ParseResponse(resp);
+    std::cout << resp.item(0).title() << std::endl;
+    std::cout << resp.item(0).jump_url() << std::endl;
+    std::cout << resp.item_size() << std::endl;
+    fprintf(stderr, "ParseResponse Over!!!\n");
+    //std::cout << "hahahahhahahahha" << std::endl;
     return;
 }
 
@@ -152,7 +164,9 @@ void CallServer()
 
 int main(int argc, char* argv[])
 {
-    base::InitApp(argc, argv);
+    google::InitGoogleLogging(argv[0]);
+  	fLS::FLAGS_log_dir = "../log/"; 
+    gflags::ParseCommandLineFlags(&argc, &argv, true); 
     doc_client::CallServer();
     return 0;
 }

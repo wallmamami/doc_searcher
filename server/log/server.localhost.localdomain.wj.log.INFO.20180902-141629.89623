@@ -1,0 +1,19 @@
+Log file created at: 2018/09/02 14:16:29
+Running on machine: localhost.localdomain
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0902 14:16:29.754961 89623 index.cc:301] Index Load
+I0902 14:16:33.424279 89623 index.cc:309] Index Load Done
+I0902 14:16:33.427806 89623 server_main.cc:54] Index Load Done !
+I0902 14:16:44.289885 89638 doc_searcher.cc:44] CutQuery Done! sid=0
+I0902 14:16:44.289927 89638 doc_searcher.cc:22] Retrieve Begin!
+I0902 14:16:44.289947 89638 doc_searcher.cc:62] inverted_list NULL
+I0902 14:16:44.289963 89638 doc_searcher.cc:24] Retrieve Done!
+I0902 14:16:44.289978 89638 doc_searcher.cc:27] Rank Done!
+I0902 14:16:44.289994 89638 doc_searcher.cc:123] 0
+I0902 14:16:44.290009 89638 doc_searcher.cc:30] Retrieve Done!
+I0902 14:16:44.290138 89638 doc_searcher.cc:178] [Request]sid: 0
+timestamp: 1535869003
+query: "filesystem"
+I0902 14:16:44.290179 89638 doc_searcher.cc:179] [Response]sid: 0
+timestamp: 1535869004
+err_code: 0

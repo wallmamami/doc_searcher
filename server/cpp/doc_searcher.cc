@@ -55,6 +55,7 @@ bool DocSearcher::Retrieve(Context* context)
         {
             //该分词结果如果没有对应的倒排拉链，继续
             //不影响其他的
+            LOG(INFO) << "inverted_list NULL" << word;
             continue;
         }
         for(size_t i = 0; i < inverted_list->size(); ++i)
@@ -115,6 +116,7 @@ bool DocSearcher::PackageResponse(Context* context)
         item->set_jump_url(doc_info->jump_url());
         item->set_show_url(doc_info->show_url());
     }
+    LOG(INFO) << resp->item_size();
     return true;
 }
 

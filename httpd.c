@@ -346,12 +346,11 @@ int exe_cgi(int sock, char path[], char method[], char* query_string, int* err)
 
             //printf("out of pipe i = %d s = %d\n", i, s);
         }
-
         while(read(output[0], &c, 1) > 0)
         {
             send(sock, &c, 1, 0);//从管道读取数取，发给客户端
         }
-
+        
         waitpid(id, NULL, 0);
         close(input[1]);
         close(output[0]);
