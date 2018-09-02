@@ -13,5 +13,6 @@ server.pb.cc:server.proto
 		$(PROTOC) server.proto --cpp_out=.
 
 .PHONY:clean
-	clean:
-		rm server server.pb.*
+
+clean:
+	rm server server.pb.*

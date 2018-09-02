@@ -1,0 +1,7 @@
+Log file created at: 2018/09/02 16:23:43
+Running on machine: localhost.localdomain
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0902 16:23:43.692006 99402 index.cc:301] Index Load
+I0902 16:23:47.231019 99402 index.cc:309] Index Load Done
+I0902 16:23:47.231482 99402 server_main.cc:54] Index Load Done !
+F0902 16:23:47.432894 99402 server_main.cc:62] Check failed: server.Start("0.0.0.0:" + fLS::FLAGS_port) 

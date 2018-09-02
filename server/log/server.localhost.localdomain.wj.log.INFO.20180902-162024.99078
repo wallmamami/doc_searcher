@@ -1,0 +1,4 @@
+Log file created at: 2018/09/02 16:20:24
+Running on machine: localhost.localdomain
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0902 16:20:24.302713 99078 index.cc:301] Index Load
